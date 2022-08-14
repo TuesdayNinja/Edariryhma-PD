@@ -36,6 +36,7 @@ const handleTextColor = (color: Color) => {
 };
 
 const Container = styled.div<ConteinerProps>`
+  width: 100%;
   padding: 2em 4em;
   background-color: ${({ color }) => handleBackgroundColor(color)};
   color: ${({ color }) => handleTextColor(color)};
