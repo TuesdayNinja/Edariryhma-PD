@@ -34,6 +34,7 @@ const GlobalStyle = createGlobalStyle`
   a {
     color: inherit;
     text-decoration: none;
+    cursor: pointer;
   }
   * {
       box-sizing: border-box;
