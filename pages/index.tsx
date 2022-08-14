@@ -11,7 +11,13 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-family: freight-sans-pro, sans-serif;
     background-color: #fdfffc;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5em;
+    @media (max-width: 900px) {
+      scroll-padding-top: 4em;
   }
+  }
+
 
   h1 {
     font-family: droid-sans, sans-serif;
@@ -37,6 +43,9 @@ const GlobalStyle = createGlobalStyle`
 const Content = styled.div`
   width: 100%;
   margin-top: 5em;
+  @media (max-width: 900px) {
+    margin-top: 4em;
+  }
 `;
 
 const Home: NextPage = () => {
@@ -55,7 +64,7 @@ const Home: NextPage = () => {
       <Header />
       <main>
         <Content>
-          <ContentBlock color="blue">
+          <ContentBlock id="etusivu" color="blue">
             <p>
               P&amp;D on Jyväskylän yliopiston ylioppilaskunnan
               puoluepoliittisesti sitoutumaton edustajistoryhmä. Olemma suurin
@@ -67,7 +76,7 @@ const Home: NextPage = () => {
               ainejärjestöistä!{" "}
             </p>
           </ContentBlock>
-          <ContentBlock color="white">
+          <ContentBlock id="tapa-toimia" color="white">
             <div>
               <h1>Tapa Toimia</h1>
               <p>
@@ -97,7 +106,7 @@ const Home: NextPage = () => {
               </p>
             </div>
           </ContentBlock>
-          <ContentBlock color="grey">
+          <ContentBlock id="edustajat" color="grey">
             <div>
               <h1>Edustajat</h1>
               <p>
@@ -119,7 +128,7 @@ const Home: NextPage = () => {
               <h2>P&amp;D muissa luottamustoimissa</h2>
             </div>
           </ContentBlock>
-          <ContentBlock color="red">
+          <ContentBlock id="ota-yhteytta" color="red">
             <div>
               <h1>Ota yhteyttä</h1>
               <p>

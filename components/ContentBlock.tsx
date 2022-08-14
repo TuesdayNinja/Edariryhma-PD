@@ -4,6 +4,7 @@ type Color = "red" | "blue" | "grey" | "white";
 
 interface Props {
   color: Color;
+  id: string;
   children: JSX.Element;
 }
 
@@ -42,8 +43,12 @@ const Container = styled.div<ConteinerProps>`
   color: ${({ color }) => handleTextColor(color)};
 `;
 
-const ContentBlock = ({ color, children }: Props) => {
-  return <Container color={color}>{children}</Container>;
+const ContentBlock = ({ color, id, children }: Props) => {
+  return (
+    <Container color={color} id={id}>
+      {children}
+    </Container>
+  );
 };
 
 export default ContentBlock;
