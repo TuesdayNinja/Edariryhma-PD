@@ -3,6 +3,7 @@ import Head from "next/head";
 import styled, { createGlobalStyle } from "styled-components";
 import ContentBlock from "../components/ContentBlock";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const GlobalStyle = createGlobalStyle`
   html,
@@ -162,7 +163,9 @@ const Home: NextPage = () => {
         </Content>
       </main>
 
-      <footer></footer>
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   );
 };
