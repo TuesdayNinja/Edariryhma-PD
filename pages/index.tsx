@@ -3,6 +3,7 @@ import Head from "next/head";
 import styled, { createGlobalStyle } from "styled-components";
 import ContentBlock from "../components/ContentBlock";
 import Header from "../components/Header";
+import Image from "next/image";
 
 const GlobalStyle = createGlobalStyle`
   html,
@@ -15,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
     scroll-padding-top: 5em;
     @media (max-width: 900px) {
       scroll-padding-top: 4em;
-  }
+    }
   }
 
 
@@ -49,6 +50,53 @@ const Content = styled.div`
   }
 `;
 
+const BigText = styled.p`
+  font-size: 1.5em;
+`;
+
+const Hero = styled.div`
+  display: flex;
+  @media (max-width: 1000px) {
+    display: flex;
+    gap: 1.5em;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (max-width: 600px) {
+    gap: 1em;
+  }
+`;
+
+const HeroPolaroidImageContainer = styled.div`
+  height: 100%;
+  padding: 1em 1em 0.5em 1em;
+  margin: 1em;
+  width: 30em;
+  background-color: #fdfffc;
+  transform: rotate(-3deg);
+  @media (max-width: 1000px) {
+    width: 70%;
+    margin-bottom: 2em;
+  }
+  @media (max-width: 600px) {
+    width: 90%;
+  }
+`;
+
+const HeroPolaroidText = styled.div`
+  color: #383838;
+  margin: 1em 0;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: droid-serif;
+  @media (max-width: 1200px) {
+    margin: 0.5em 0;
+  }
+  @media (max-width: 1000px) {
+    margin: 1em 0;
+  }
+`;
+
 const Home: NextPage = () => {
   return (
     <div>
@@ -66,16 +114,31 @@ const Home: NextPage = () => {
       <main>
         <Content>
           <ContentBlock id="etusivu" color="blue">
-            <p>
-              P&amp;D on Jyväskylän yliopiston ylioppilaskunnan
-              puoluepoliittisesti sitoutumaton edustajistoryhmä. Olemma suurin
-              ryhmä kahdellatoista JYYn edustajistopaikalla. P&amp;D kuuluu myös
-              Järjestöjen ääni -yhteistyöryhmittymään yhdessä Alvarin unionin ja
-              Luonnontieteilijöiden kanssa. Koostumme tällähetkellä
-              Pörssiläisistä, Dumppareista ja Stimpoista, mutta toivotamme
-              kaikki edaritoiminnasta kiinnistuneet mukaan kaikista
-              ainejärjestöistä!{" "}
-            </p>
+            <Hero>
+              <BigText>
+                <b>P&amp;D</b> on Jyväskylän yliopiston ylioppilaskunnan
+                puoluepoliittisesti sitoutumaton edustajistoryhmä.
+                <br />
+                <br />
+                Olemme suurin ryhmä kahdellatoista JYYn edustajistopaikalla.
+                P&amp;D kuuluu myös Järjestöjen ääni -yhteistyöryhmittymään
+                yhdessä Alvarin unionin ja Luonnontieteilijöiden kanssa.
+                <br />
+                <br />
+                Koostumme tällä hetkellä Pörssin, Dumppin ja Stimuluksen
+                opiskelijoista, mutta toivotamme edaritoiminnasta kiinnostuneet
+                mukaan kaikista ainejärjestöistä!{" "}
+              </BigText>
+              <HeroPolaroidImageContainer>
+                <Image
+                  src="/meidanjengi.jpg"
+                  height={900}
+                  width={800}
+                  alt="Meidän jengi"
+                />
+                <HeroPolaroidText>Meidän porukka</HeroPolaroidText>
+              </HeroPolaroidImageContainer>
+            </Hero>
           </ContentBlock>
           <ContentBlock id="tapa-toimia" color="white">
             <div>
@@ -111,13 +174,13 @@ const Home: NextPage = () => {
             <div>
               <h1>Edustajat</h1>
               <p>
-                Pörssi&amp;Dumpin edustajat toimivat useissa eri Jyväskylän
-                yliopiston ja Jyväskylän yliopiston ylioppilaskunnan
-                vaikuttamiselimissä, kuten ylioppilaskunnan edustajistossa ja
-                hallituksessa, yliopistokollegiossa, ylioppilaslehden
-                johtokunnassa jne. Vaikuttamispaikat vaihtelevat jonkin verran
-                vuosittain, mutta kaikilla rintamilla tehdään silti jatkuvaa
-                edunvalvontatyötä P&amp;D:läisten eteen.
+                P&amp;D:n edustajat toimivat useissa eri Jyväskylän yliopiston
+                ja Jyväskylän yliopiston ylioppilaskunnan vaikuttamiselimissä,
+                kuten ylioppilaskunnan edustajistossa ja hallituksessa,
+                yliopistokollegiossa, ylioppilaslehden johtokunnassa jne.
+                Vaikuttamispaikat vaihtelevat jonkin verran vuosittain, mutta
+                kaikilla rintamilla tehdään silti jatkuvaa edunvalvontatyötä
+                P&amp;D:läisten eteen.
               </p>
 
               <h2>P&amp;D JYYn hallituksessa</h2>

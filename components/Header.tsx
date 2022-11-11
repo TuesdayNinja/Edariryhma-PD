@@ -17,6 +17,7 @@ const Container = styled.div`
   background-color: #dfe5e5;
   display: flex;
   justify-content: space-between;
+  z-index: 10;
   @media (max-width: 900px) {
     height: 4em;
     padding: 0.5em 1em;
