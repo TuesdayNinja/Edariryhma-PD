@@ -14,7 +14,7 @@ const Container = styled.div`
   padding: 1em 2em;
   position: fixed;
   top: 0;
-  background-color: #dfe5e5;
+  background-color: #e3e5f1;
   display: flex;
   justify-content: space-between;
   z-index: 10;
@@ -27,6 +27,9 @@ const Container = styled.div`
 const LinkContent = styled.a`
   font-size: 1.5em;
   font-family: droid-sans, sans-serif;
+  :hover {
+    text-decoration: underline;
+  }
 `;
 
 const Links = styled.div<MobileProps>`
@@ -34,12 +37,14 @@ const Links = styled.div<MobileProps>`
   align-items: center;
   gap: 2em;
   height: 100%;
+  color: #567daf;
+  font-weight: 600;
   @media (max-width: 900px) {
     display: ${({ open }) => (open ? "flex" : "none")};
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #dfe5e5;
+    background-color: #e3e5f1;
     width: 100%;
     margin-top: 4em;
     height: 18em;
@@ -71,12 +76,18 @@ const XIcon = styled(X)`
   }
 `;
 
-const ImageContainer = styled.div`
-  width: 5em;
-  height: 3em;
-  position: relative;
+const Logo = styled.div`
+  font-size: 3em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  span:first-child {
+    color: #567daf;
+  }
+  span:last-child {
+    color: #d45858;
+  }
   @media (max-width: 900px) {
-    width: 4em;
   }
 `;
 
@@ -87,16 +98,10 @@ const Header = () => {
 
   return (
     <Container>
-      <ImageContainer>
-        <Image
-          src="/logo.png"
-          alt="P&D"
-          width="100%"
-          height="100%"
-          layout="fill"
-          objectFit="contain"
-        />
-      </ImageContainer>
+      <Logo>
+        <span>P</span>
+        <span>D</span>
+      </Logo>
       <MobileWrapper>
         {mobileMenuOpen ? (
           <XIcon onClick={handleMenuClick} />

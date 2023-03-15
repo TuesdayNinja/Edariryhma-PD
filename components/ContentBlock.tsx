@@ -15,11 +15,11 @@ interface ConteinerProps {
 const handleBackgroundColor = (color: Color) => {
   switch (color) {
     case "red":
-      return "#930001";
+      return "#D45858";
     case "blue":
-      return "#003276";
+      return "#567DAF";
     case "grey":
-      return "#DFE5E5";
+      return "#e3e5f1";
     default:
       return "#FDFFFC";
   }
