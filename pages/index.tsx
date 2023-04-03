@@ -127,7 +127,7 @@ const Home: NextPage = () => {
                 kiinnostuneet mukaan toimintaan!
                 <br />
                 <br />
-                ARVOT/VISIO/JOKU ISKULAUSE – Oisko se se 'OPISKELIJOIDEN ÄÄNI'?
+                ARVOT/VISIO/JOKU ISKULAUSE – Oisko se se OPISKELIJOIDEN ÄÄNI?
                 <br />
                 <br />
                 Olemme JYYn edustajiston suurin ryhmä 12 edustajalla. Kuulumme
