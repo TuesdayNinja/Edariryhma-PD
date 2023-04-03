@@ -1,16 +1,19 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Script from "next/script";
+import Image from "next/image";
 import styled, { createGlobalStyle } from "styled-components";
 import ContentBlock from "../components/ContentBlock";
 import Header from "../components/Header";
-import Image from "next/image";
+import Footer from "../components/Footer";
+import PeopleGrid from "../components/PeopleGrid";
 
 const GlobalStyle = createGlobalStyle`
   html,
   body {
     padding: 0;
     margin: 0;
-    font-family: freight-sans-pro, sans-serif;
+    font-family: Nunito Sans, sans-serif;
     background-color: #fdfffc;
     scroll-behavior: smooth;
     scroll-padding-top: 5em;
@@ -19,23 +22,13 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-
-  h1 {
-    font-family: droid-sans, sans-serif;
-  }
-
-  h2 {
-    font-family: droid-sans, sans-serif;
-  }
-
-  h3 {
-    font-family: droid-sans, sans-serif;
-  }
-
   a {
     color: inherit;
     text-decoration: none;
     cursor: pointer;
+    :hover{
+      text-decoration: underline;
+    }
   }
   * {
       box-sizing: border-box;
@@ -74,6 +67,7 @@ const HeroPolaroidImageContainer = styled.div`
   width: 30em;
   background-color: #fdfffc;
   transform: rotate(-3deg);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   @media (max-width: 1000px) {
     width: 70%;
     margin-bottom: 2em;
@@ -88,7 +82,6 @@ const HeroPolaroidText = styled.div`
   margin: 1em 0;
   text-align: center;
   font-size: 1.5em;
-  font-family: droid-serif;
   @media (max-width: 1200px) {
     margin: 0.5em 0;
   }
@@ -97,17 +90,25 @@ const HeroPolaroidText = styled.div`
   }
 `;
 
+const InstagramGrid = styled.div`
+  padding: 1.5em 0;
+`;
+
+const ContactGrid = styled.div`
+  display: grid;
+  grid-template-columns: 10em 10em;
+`;
+
 const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Edariryhmä P&amp;D</title>
+        <title>Edariryhmä PD</title>
         <meta
           name="description"
-          content="P&amp;D on Jyväskylän yliopiston ylioppilaskunnan puoluepoliittisesti sitoutumaton edustajistoryhmä. "
+          content="PD on Jyväskylän yliopiston ylioppilaskunnan puoluepoliittisesti sitoutumaton edustajistoryhmä."
         />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="https://use.typekit.net/axk4wab.css" />
       </Head>
       <GlobalStyle />
       <Header />
@@ -116,18 +117,22 @@ const Home: NextPage = () => {
           <ContentBlock id="etusivu" color="blue">
             <Hero>
               <BigText>
-                <b>P&amp;D</b> on Jyväskylän yliopiston ylioppilaskunnan
+                <b>PD</b> on Jyväskylän yliopiston ylioppilaskunnan
                 puoluepoliittisesti sitoutumaton edustajistoryhmä.
                 <br />
                 <br />
-                Olemme suurin ryhmä kahdellatoista JYYn edustajistopaikalla.
-                P&amp;D kuuluu myös Järjestöjen ääni -yhteistyöryhmittymään
-                yhdessä Alvarin unionin ja Luonnontieteilijöiden kanssa.
+                Tällä hetkellä ryhmä koostuu Pörssi ry:n, Dumppi ry:n ja
+                Stimulus ry:n opiskelijoista, mutta toivotamme kaikki
+                edustajiston toiminnasta tai edustajana toimimisesta
+                kiinnostuneet mukaan toimintaan!
                 <br />
                 <br />
-                Koostumme tällä hetkellä Pörssin, Dumppin ja Stimuluksen
-                opiskelijoista, mutta toivotamme edaritoiminnasta kiinnostuneet
-                mukaan kaikista ainejärjestöistä!{" "}
+                ARVOT/VISIO/JOKU ISKULAUSE – Oisko se se 'OPISKELIJOIDEN ÄÄNI'?
+                <br />
+                <br />
+                Olemme JYYn edustajiston suurin ryhmä 12 edustajalla. Kuulumme
+                myös Järjestöjen Ääni- yhteistyöryhmittymään Alvarin Unionin ja
+                Luonnontieteilijöiden kanssa.
               </BigText>
               <HeroPolaroidImageContainer>
                 <Image
@@ -144,85 +149,88 @@ const Home: NextPage = () => {
             <div>
               <h1>Tapa Toimia</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                nec tempor neque. Nullam ligula metus, consectetur ut faucibus
-                in, aliquam et velit. Nam maximus viverra ipsum non mattis.
-                Quisque non purus id lorem finibus varius eu ut erat. Etiam
-                tincidunt vel orci nec venenatis. Sed efficitur, elit non
-                elementum viverra, est erat elementum sem, eu tincidunt elit ex
-                eu metus. Sed condimentum tincidunt sagittis. Sed egestas et
-                massa sit amet sagittis. Praesent porttitor, sapien quis finibus
-                tempor, justo urna tincidunt lectus, quis convallis lorem diam
-                quis metus. Sed eu molestie turpis. Integer eget molestie diam.
-                Nullam vel sapien lacinia, euismod leo sit amet, sagittis nisi.
-                Fusce imperdiet nisi sit amet finibus molestie. Integer
-                hendrerit sem ac nibh lobortis, viverra accumsan metus
-                imperdiet. Nulla tellus nunc, rhoncus eget bibendum eget,
-                facilisis sed risus. Mauris egestas laoreet lorem, ac porttitor
-                nibh lacinia vitae. Integer sagittis massa ut ipsum vehicula
-                placerat sed consectetur ligula. Curabitur eleifend lectus vitae
-                vestibulum vulputate. Phasellus vulputate accumsan viverra.
-                Donec dapibus tortor in odio pellentesque, a faucibus risus
-                volutpat. Donec eget odio turpis. Aliquam et justo malesuada,
-                accumsan urna nec, volutpat erat. Morbi bibendum erat vel eros
-                accumsan, quis consectetur justo finibus. Ut blandit a nibh vel
-                dictum.
+                Meillä PDssä jokaisen mielipide on arvokas. Emme kannata
+                ryhmäkuria, vaan keskustelemme ajankohtais- ja päätösasioista
+                avoimesti. Jokainen ryhmäläinen voi tehdä päätöksensä yhteisten
+                keskustelujen tai omien ajatustensa perusteella ja äänestää oman
+                mielensä mukaan.
+                <br />
+                <br />
+                Kannatamme kuitenkin kaikki samankaltaista ajatusta siitä, että
+                JYYn päätöksenteko tulisi olla opiskelijaa lähellä ja keskittyä
+                pääosin joka tilanteessa Jyväskylä yliopiston opiskelijoiden
+                etujen ajamiseen.
+                <br />
+                <br />
+                Pyrimme pitämään hyvin matalan kynnyksen toimintaamme
+                osallistumisessa: sinulla ei siis tarvitse olla vahvoja
+                mielipiteitä tai selkeitä uusia ajatuksia, vaan riittää, että
+                olet kiinnostunut Jyväskylän yliopiston opiskelijoita koskevista
+                asioista, haluat oppia uutta ja vaikuttaa asioihin yhdessä!
               </p>
+              <InstagramGrid>
+                <figure data-behold-id="m3IIAMRwFybMjHHZ12eH"></figure>
+                <Script
+                  src="https://w.behold.so/widget.js"
+                  type="module"
+                ></Script>
+              </InstagramGrid>
             </div>
           </ContentBlock>
           <ContentBlock id="edustajat" color="grey">
             <div>
               <h1>Edustajat</h1>
               <p>
-                P&amp;D:n edustajat toimivat useissa eri Jyväskylän yliopiston
-                ja Jyväskylän yliopiston ylioppilaskunnan vaikuttamiselimissä,
+                P&D:n edustajat toimivat useissa eri Jyväskylän yliopiston ja
+                Jyväskylän yliopiston ylioppilaskunnan vaikuttamiselimissä,
                 kuten ylioppilaskunnan edustajistossa ja hallituksessa,
                 yliopistokollegiossa, ylioppilaslehden johtokunnassa jne.
                 Vaikuttamispaikat vaihtelevat jonkin verran vuosittain, mutta
                 kaikilla rintamilla tehdään silti jatkuvaa edunvalvontatyötä
-                P&amp;D:läisten eteen.
+                Jyväskylän yliopiston opiskelijoiden eteen.
               </p>
 
-              <h2>P&amp;D JYYn hallituksessa</h2>
+              <h2>PD JYYn hallituksessa</h2>
 
-              <h2>P&amp;D JYYn edustajistossa</h2>
+              <h2>PD JYYn edustajistossa</h2>
               <h3>Varsinaiset edustajat</h3>
+              <PeopleGrid />
               <h3>Vara edustajat</h3>
 
-              <h2>P&amp;D muissa luottamustoimissa</h2>
+              <h2>PD muissa luottamustoimissa</h2>
             </div>
           </ContentBlock>
           <ContentBlock id="ota-yhteytta" color="red">
             <div>
               <h1>Ota yhteyttä</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                nec tempor neque. Nullam ligula metus, consectetur ut faucibus
-                in, aliquam et velit. Nam maximus viverra ipsum non mattis.
-                Quisque non purus id lorem finibus varius eu ut erat. Etiam
-                tincidunt vel orci nec venenatis. Sed efficitur, elit non
-                elementum viverra, est erat elementum sem, eu tincidunt elit ex
-                eu metus. Sed condimentum tincidunt sagittis. Sed egestas et
-                massa sit amet sagittis. Praesent porttitor, sapien quis finibus
-                tempor, justo urna tincidunt lectus, quis convallis lorem diam
-                quis metus. Sed eu molestie turpis. Integer eget molestie diam.
-                Nullam vel sapien lacinia, euismod leo sit amet, sagittis nisi.
-                Fusce imperdiet nisi sit amet finibus molestie. Integer
-                hendrerit sem ac nibh lobortis, viverra accumsan metus
-                imperdiet. Nulla tellus nunc, rhoncus eget bibendum eget,
-                facilisis sed risus. Mauris egestas laoreet lorem, ac porttitor
-                nibh lacinia vitae. Integer sagittis massa ut ipsum vehicula
-                placerat sed consectetur ligula. Curabitur eleifend lectus vitae
-                vestibulum vulputate. Phasellus vulputate accumsan viverra.
-                Donec dapibus tortor in odio pellentesque, a faucibus risus
-                volutpat. Donec eget odio turpis. Aliquam et justo malesuada,
-                accumsan urna nec, volutpat erat. Morbi bibendum erat vel eros
-                accumsan, quis consectetur justo finibus. Ut blandit a nibh vel
-                dictum.
-              </p>
+              <h3> Ryhmävastaavat</h3>
+              <ContactGrid>
+                <span>Hilma Hintikka</span>
+                <span>Violan Halmetoja</span>
+                <span>Xxxx@xxx.xx</span>
+                <span>Xxxx@xxx.xx</span>
+              </ContactGrid>
+              <h3>Somet</h3>
+              <ContactGrid>
+                <a
+                  href="https://www.instagram.com/edariryhma_pd/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Instagram
+                </a>
+                <a
+                  href="https://www.facebook.com/edustajistoryhmapd/ "
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Facebook
+                </a>
+              </ContactGrid>
             </div>
           </ContentBlock>
         </Content>
+        <Footer />
       </main>
 
       <footer></footer>

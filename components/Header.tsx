@@ -26,7 +26,6 @@ const Container = styled.div`
 
 const LinkContent = styled.a`
   font-size: 1.5em;
-  font-family: droid-sans, sans-serif;
   :hover {
     text-decoration: underline;
   }
@@ -78,7 +77,7 @@ const XIcon = styled(X)`
 
 const Logo = styled.div`
   font-size: 3em;
-  font-weight: bold;
+  font-weight: 900;
   display: flex;
   align-items: center;
   span:first-child {
