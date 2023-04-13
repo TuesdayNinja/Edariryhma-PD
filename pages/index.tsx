@@ -97,6 +97,11 @@ const InstagramGrid = styled.div`
 const ContactGrid = styled.div`
   display: grid;
   grid-template-columns: 10em 10em;
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
 `;
 
 const Home: NextPage = () => {
@@ -116,24 +121,24 @@ const Home: NextPage = () => {
         <Content>
           <ContentBlock id="etusivu" color="blue">
             <Hero>
-              <BigText>
-                <b>PD</b> on Jyväskylän yliopiston ylioppilaskunnan
-                puoluepoliittisesti sitoutumaton edustajistoryhmä.
-                <br />
-                <br />
-                Tällä hetkellä ryhmä koostuu Pörssi ry:n, Dumppi ry:n ja
-                Stimulus ry:n opiskelijoista, mutta toivotamme kaikki
-                edustajiston toiminnasta tai edustajana toimimisesta
-                kiinnostuneet mukaan toimintaan!
-                <br />
-                <br />
-                ARVOT/VISIO/JOKU ISKULAUSE – Oisko se se OPISKELIJOIDEN ÄÄNI?
-                <br />
-                <br />
-                Olemme JYYn edustajiston suurin ryhmä 12 edustajalla. Kuulumme
-                myös Järjestöjen Ääni- yhteistyöryhmittymään Alvarin Unionin ja
-                Luonnontieteilijöiden kanssa.
-              </BigText>
+              <div>
+                <BigText>
+                  <b>PD</b> on Jyväskylän yliopiston ylioppilaskunnan
+                  puoluepoliittisesti sitoutumaton edustajistoryhmä.
+                </BigText>
+                <p>
+                  Tällä hetkellä ryhmä koostuu Pörssi ry:n, Dumppi ry:n ja
+                  Stimulus ry:n opiskelijoista, mutta toivotamme kaikki
+                  edustajiston toiminnasta tai edustajana toimimisesta
+                  kiinnostuneet mukaan toimintaan!
+                </p>
+                <BigText>OPISKELIJOIDEN ÄÄNI</BigText>
+                <p>
+                  Olemme JYYn edustajiston suurin ryhmä 12 edustajalla. Kuulumme
+                  myös Järjestöjen Ääni- yhteistyöryhmittymään Alvarin Unionin
+                  ja Luonnontieteilijöiden kanssa.
+                </p>
+              </div>
               <HeroPolaroidImageContainer>
                 <Image
                   src="/meidanjengi.jpg"
@@ -196,7 +201,7 @@ const Home: NextPage = () => {
               <h3>Varsinaiset edustajat</h3>
               <PeopleGrid />
               <h3>Vara edustajat</h3>
-
+              <PeopleGrid />
               <h2>PD muissa luottamustoimissa</h2>
             </div>
           </ContentBlock>
@@ -205,10 +210,16 @@ const Home: NextPage = () => {
               <h1>Ota yhteyttä</h1>
               <h3> Ryhmävastaavat</h3>
               <ContactGrid>
-                <span>Hilma Hintikka</span>
-                <span>Violan Halmetoja</span>
-                <span>Xxxx@xxx.xx</span>
-                <span>Xxxx@xxx.xx</span>
+                <span>
+                  Hilma Hintikka
+                  <br />
+                  Xxxx@xxx.xx
+                </span>
+                <span>
+                  Violan Halmetoja
+                  <br />
+                  Xxxx@xxx.xx
+                </span>
               </ContactGrid>
               <h3>Somet</h3>
               <ContactGrid>

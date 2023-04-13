@@ -32,10 +32,10 @@ const Logo = styled.div`
   display: flex;
   align-items: center;
   span:first-child {
-    color: #567daf;
+    color: #d45858;
   }
   span:last-child {
-    color: #d45858;
+    color: #567daf;
   }
   @media (max-width: 900px) {
   }

@@ -43,10 +43,17 @@ const Container = styled.div<ConteinerProps>`
   color: ${({ color }) => handleTextColor(color)};
 `;
 
+const Content = styled.div`
+  @media (min-width: 1400px) {
+    width: 1400px;
+    margin: 0 auto;
+  }
+`;
+
 const ContentBlock = ({ color, id, children }: Props) => {
   return (
     <Container color={color} id={id}>
-      {children}
+      <Content>{children}</Content>
     </Container>
   );
 };
