@@ -1,6 +1,16 @@
 import styled from "styled-components";
 import Image from "next/image";
 
+type Person = {
+  nimi: string;
+  ala: string;
+  kuva: string;
+};
+
+interface PropsType {
+  people: Person[];
+}
+
 const Grid = styled.div`
   height: 100%;
   display: grid;
@@ -21,7 +31,7 @@ const Grid = styled.div`
 `;
 
 const PolaroidImageContainer = styled.div`
-  height: 20em;
+  height: 22em;
   width: 100%;
   background-color: #fdfffc;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -49,189 +59,28 @@ const ImageContainer = styled.div`
   }
 `;
 
-const PeopleGrid = () => {
+const PeopleGrid = (people: PropsType) => {
   return (
     <Grid>
-      <PolaroidImageContainer>
-        <ImageContainer>
-          <Image
-            src="/people/aku.jpg"
-            layout="fill"
-            objectFit="cover"
-            alt=""
-            sizes="(max-width: 768px) 80vw,
-          (max-width: 1200px) 20vw,
-          10vw"
-          />
-        </ImageContainer>
-        <b>Aku Buckbee</b>
-        <span>Opiskeluala</span>
-      </PolaroidImageContainer>
-      <PolaroidImageContainer>
-        <ImageContainer>
-          <Image
-            src="/people/aija.jpg"
-            layout="fill"
-            objectFit="cover"
-            alt=""
-            sizes="(max-width: 768px) 80vw,
-          (max-width: 1200px) 20vw,
-          10vw"
-          />
-        </ImageContainer>
-        <b>Aija Hokkanen</b>
-        <span>Opiskeluala</span>
-      </PolaroidImageContainer>
-      <PolaroidImageContainer>
-        <ImageContainer>
-          <Image
-            src="/people/inka.jpg"
-            layout="fill"
-            objectFit="cover"
-            alt=""
-            sizes="(max-width: 768px) 80vw,
-          (max-width: 1200px) 20vw,
-          10vw"
-          />
-        </ImageContainer>
-        <b>Inka Kauppinen</b>
-        <span>Opiskeluala</span>
-      </PolaroidImageContainer>
-      <PolaroidImageContainer>
-        <ImageContainer>
-          <Image
-            src="/people/aku.jpg"
-            layout="fill"
-            objectFit="cover"
-            alt=""
-            sizes="(max-width: 768px) 80vw,
-          (max-width: 1200px) 20vw,
-          10vw"
-          />
-        </ImageContainer>
-        <b>Aku Buckbee</b>
-        <span>Opiskeluala</span>
-      </PolaroidImageContainer>
-      <PolaroidImageContainer>
-        <ImageContainer>
-          <Image
-            src="/people/aija.jpg"
-            layout="fill"
-            objectFit="cover"
-            alt=""
-            sizes="(max-width: 768px) 80vw,
-          (max-width: 1200px) 20vw,
-          10vw"
-          />
-        </ImageContainer>
-        <b>Aija Hokkanen</b>
-        <span>Opiskeluala</span>
-      </PolaroidImageContainer>
-      <PolaroidImageContainer>
-        <ImageContainer>
-          <Image
-            src="/people/inka.jpg"
-            layout="fill"
-            objectFit="cover"
-            alt=""
-            sizes="(max-width: 768px) 80vw,
-          (max-width: 1200px) 20vw,
-          10vw"
-          />
-        </ImageContainer>
-        <b>Inka Kauppinen</b>
-        <span>Opiskeluala</span>
-      </PolaroidImageContainer>
-      <PolaroidImageContainer>
-        <ImageContainer>
-          <Image
-            src="/people/aku.jpg"
-            layout="fill"
-            objectFit="cover"
-            alt=""
-            sizes="(max-width: 768px) 80vw,
-          (max-width: 1200px) 20vw,
-          10vw"
-          />
-        </ImageContainer>
-        <b>Aku Buckbee</b>
-        <span>Opiskeluala</span>
-      </PolaroidImageContainer>
-      <PolaroidImageContainer>
-        <ImageContainer>
-          <Image
-            src="/people/aija.jpg"
-            layout="fill"
-            objectFit="cover"
-            alt=""
-            sizes="(max-width: 768px) 80vw,
-          (max-width: 1200px) 20vw,
-          10vw"
-          />
-        </ImageContainer>
-        <b>Aija Hokkanen</b>
-        <span>Opiskeluala</span>
-      </PolaroidImageContainer>
-      <PolaroidImageContainer>
-        <ImageContainer>
-          <Image
-            src="/people/inka.jpg"
-            layout="fill"
-            objectFit="cover"
-            alt=""
-            sizes="(max-width: 768px) 80vw,
-          (max-width: 1200px) 20vw,
-          10vw"
-          />
-        </ImageContainer>
-        <b>Inka Kauppinen</b>
-        <span>Opiskeluala</span>
-      </PolaroidImageContainer>
-      <PolaroidImageContainer>
-        <ImageContainer>
-          <Image
-            src="/people/aku.jpg"
-            layout="fill"
-            objectFit="cover"
-            alt=""
-            sizes="(max-width: 768px) 80vw,
-          (max-width: 1200px) 20vw,
-          10vw"
-          />
-        </ImageContainer>
-        <b>Aku Buckbee</b>
-        <span>Opiskeluala</span>
-      </PolaroidImageContainer>
-      <PolaroidImageContainer>
-        <ImageContainer>
-          <Image
-            src="/people/aija.jpg"
-            layout="fill"
-            objectFit="cover"
-            alt=""
-            sizes="(max-width: 768px) 80vw,
-          (max-width: 1200px) 20vw,
-          10vw"
-          />
-        </ImageContainer>
-        <b>Aija Hokkanen</b>
-        <span>Opiskeluala</span>
-      </PolaroidImageContainer>
-      <PolaroidImageContainer>
-        <ImageContainer>
-          <Image
-            src="/people/inka.jpg"
-            layout="fill"
-            objectFit="cover"
-            alt=""
-            sizes="(max-width: 768px) 80vw,
-          (max-width: 1200px) 20vw,
-          10vw"
-          />
-        </ImageContainer>
-        <b>Inka Kauppinen</b>
-        <span>Opiskeluala</span>
-      </PolaroidImageContainer>
+      {people.people.map((person: Person) => {
+        return (
+          <PolaroidImageContainer key={person.nimi}>
+            <ImageContainer>
+              <Image
+                src={`/people/${person.kuva}`}
+                layout="fill"
+                objectFit="cover"
+                alt=""
+                sizes="(max-width: 768px) 80vw,
+            (max-width: 1200px) 20vw,
+            10vw"
+              />
+            </ImageContainer>
+            <b>{person.nimi}</b>
+            <span>{person.ala}</span>
+          </PolaroidImageContainer>
+        );
+      })}
     </Grid>
   );
 };

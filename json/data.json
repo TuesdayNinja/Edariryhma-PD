@@ -1,0 +1,135 @@
+{
+    "varsinaiset":[
+        {
+            "nimi": "Aku Buckbee",
+            "ala": "Taloustiede",
+            "kuva": "aku.jpg"
+        },
+        {
+            "nimi": "Inka Kauppinen",
+            "ala": "Psykologia",
+            "kuva": "inka.jpeg"
+        },
+        {
+            "nimi": "Emma Laine",
+            "ala": "Viestinnän johtaminen",
+            "kuva": "emma.png"
+        },
+        {
+            "nimi": "Sara Kangasmaa",
+            "ala": "Psykologia",
+            "kuva": "sara.jpeg"
+        },
+        {
+            "nimi": "Hilma Hintikka",
+            "ala": "Johtaminen",
+            "kuva": "hilma.jpg"
+        },
+        {
+            "nimi": "Vili Vuorela",
+            "ala": "Turvallisuus ja strateginen analyysi",
+            "kuva": "vili.jpeg"
+        },
+        {
+            "nimi": "Eero Jussila",
+            "ala": "Taloustiede",
+            "kuva": "eero.jpg"
+        },
+        {
+            "nimi": "Loviisa Hurme",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "loviisa.jpeg"
+        },
+        {
+            "nimi": "Emmi Tossavainen",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "emmi.jpeg"
+        },
+        {
+            "nimi": "Teemu Haarala",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "teemu.jpg"
+        },
+        {
+            "nimi": "Sini Annamaa",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "sini.jpg"
+        },
+        {
+            "nimi": "Jeremias Colliander",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "jeremias.jpg"
+        },
+        {
+            "nimi": "Sonja Jokinen",
+            "ala": "Taloustiede",
+            "kuva": "sonja.jpg"
+        }
+    ],
+    "varat":[
+        {
+            "nimi": "Aleksanteri Skaniakos",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "allu.jpg"
+        },
+        {
+            "nimi": "Violan Halmetoja",
+            "ala": "Taloustiede",
+            "kuva": "violan.jpg"
+        },
+        {
+            "nimi": "Ville Nissinen",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "ville.jpg"
+        },
+        {
+            "nimi": "Mia Kaleton",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "mia.jpg"
+        },
+        {
+            "nimi": "Noora Lempinen",
+            "ala": "Laskentatoimi",
+            "kuva": "noora.jpg"
+        },
+        {
+            "nimi": "Fanni Rantala",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "fanni.jpg"
+        },
+        {
+            "nimi": "Aija Hokkanen",
+            "ala": "Corporate Environmental Management",
+            "kuva": "aija.jpg"
+        },
+        {
+            "nimi": "Sonja Julkunen",
+            "ala": "Taloustiede",
+            "kuva": "sonjaJu.jpg"
+        }
+    ],
+    "hallitus":[
+        {
+            "nimi": "Teemu Haarala",
+            "ala": "Hallituslainen järjestöt ja yritysyhteistyö",
+            "kuva": "teemu.jpg"
+        },
+        {
+            "nimi": "Jani Risikko",
+            "ala": "Hallituslainen sosiallipolitiikka, hyvinvointi ja liikunta",
+            "kuva": "jani.jpg"
+        },
+        {
+            "nimi": "Loviisa Hurme",
+            "ala": "Edustajiston varapuheenjohtaja",
+            "kuva": "loviisa.jpeg"
+        }
+    ],
+    "muut":[
+        {
+            "nimi": "Sonja Jokinen",
+            "ala": "JYYn liiketoimintajohtokunnan opiskelijajäsen",
+            "kuva": "sonja.jpg"
+        }
+    ]
+}

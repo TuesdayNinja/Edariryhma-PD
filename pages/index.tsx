@@ -7,6 +7,24 @@ import ContentBlock from "../components/ContentBlock";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PeopleGrid from "../components/PeopleGrid";
+import { getLocalData } from "../lib/localdata";
+
+type Person = {
+  nimi: string;
+  ala: string;
+  kuva: string;
+};
+
+interface DataContent {
+  varsinaiset: Person[];
+  varat: Person[];
+  hallitus: Person[];
+  muut: Person[];
+}
+
+interface LocalData {
+  localData: DataContent;
+}
 
 const GlobalStyle = createGlobalStyle`
   html,
@@ -17,6 +35,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: #fdfffc;
     scroll-behavior: smooth;
     scroll-padding-top: 5em;
+    width: 100%;
     @media (max-width: 900px) {
       scroll-padding-top: 4em;
     }
@@ -104,7 +123,15 @@ const ContactGrid = styled.div`
   }
 `;
 
-const Home: NextPage = () => {
+export async function getStaticProps({}) {
+  const localData: LocalData = await getLocalData();
+
+  return {
+    props: { localData },
+  };
+}
+
+const Home: NextPage<LocalData> = ({ localData }) => {
   return (
     <div>
       <Head>
@@ -132,11 +159,19 @@ const Home: NextPage = () => {
                   edustajiston toiminnasta tai edustajana toimimisesta
                   kiinnostuneet mukaan toimintaan!
                 </p>
-                <BigText>OPISKELIJOIDEN ÄÄNI</BigText>
+                <BigText>Opiskelijoiden ääni</BigText>
                 <p>
                   Olemme JYYn edustajiston suurin ryhmä 12 edustajalla. Kuulumme
                   myös Järjestöjen Ääni- yhteistyöryhmittymään Alvarin Unionin
                   ja Luonnontieteilijöiden kanssa.
+                </p>
+                <BigText>Lähde ehdolle!</BigText>
+                <p>
+                  Haluatko lähteä ehdolle 2023 edustajistovaaleissa PDn
+                  listalla?&nbsp;
+                  <a href="mailto:vitimaha@jyu.fi,hihisihi@student.jyu.fi">
+                    Ota yhteyttä ryhmävastaaviimme!
+                  </a>
                 </p>
               </div>
               <HeroPolaroidImageContainer>
@@ -195,14 +230,15 @@ const Home: NextPage = () => {
                 Jyväskylän yliopiston opiskelijoiden eteen.
               </p>
 
-              <h2>PD JYYn hallituksessa</h2>
-
+              <h2>PD JYYn hallituksessa ja edustajiston puheejohtajistossa</h2>
+              <PeopleGrid people={localData.hallitus} />
               <h2>PD JYYn edustajistossa</h2>
               <h3>Varsinaiset edustajat</h3>
-              <PeopleGrid />
+              <PeopleGrid people={localData.varsinaiset} />
               <h3>Vara edustajat</h3>
-              <PeopleGrid />
+              <PeopleGrid people={localData.varat} />
               <h2>PD muissa luottamustoimissa</h2>
+              <PeopleGrid people={localData.muut} />
             </div>
           </ContentBlock>
           <ContentBlock id="ota-yhteytta" color="red">
@@ -211,14 +247,16 @@ const Home: NextPage = () => {
               <h3> Ryhmävastaavat</h3>
               <ContactGrid>
                 <span>
-                  Hilma Hintikka
-                  <br />
-                  Xxxx@xxx.xx
-                </span>
-                <span>
                   Violan Halmetoja
                   <br />
-                  Xxxx@xxx.xx
+                  <a href="mailto:vitimaha@jyu.fi">vitimaha@jyu.fi</a>
+                </span>
+                <span>
+                  Hilma Hintikka
+                  <br />
+                  <a href="mailto:hihisihi@student.jyu.fi">
+                    hihisihi@student.jyu.fi
+                  </a>
                 </span>
               </ContactGrid>
               <h3>Somet</h3>
