@@ -116,6 +116,7 @@ const InstagramGrid = styled.div`
 const ContactGrid = styled.div`
   display: grid;
   grid-template-columns: 10em 10em;
+  gap: 2em;
   @media (max-width: 500px) {
     display: flex;
     flex-direction: column;
