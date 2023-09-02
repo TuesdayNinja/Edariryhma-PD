@@ -169,7 +169,7 @@ const Home: NextPage<LocalData> = ({ localData }) => {
                 <p>
                   Haluatko lähteä ehdolle 2023 edustajistovaaleissa PDn
                   listalla?&nbsp;
-                  <a href="mailto:vitimaha@jyu.fi,hihisihi@student.jyu.fi">
+                  <a href="mailto:vitimaha@student.jyu.fi,hihisihi@student.jyu.fi">
                     Ota yhteyttä ryhmävastaaviimme!
                   </a>
                 </p>
@@ -249,7 +249,9 @@ const Home: NextPage<LocalData> = ({ localData }) => {
                 <span>
                   Violan Halmetoja
                   <br />
-                  <a href="mailto:vitimaha@jyu.fi">vitimaha@jyu.fi</a>
+                  <a href="mailto:vitimaha@student.jyu.fi">
+                    vitimaha@student.jyu.fi
+                  </a>
                 </span>
                 <span>
                   Hilma Hintikka
