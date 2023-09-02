@@ -41,6 +41,9 @@ const Container = styled.div<ConteinerProps>`
   padding: 2em 4em;
   background-color: ${({ color }) => handleBackgroundColor(color)};
   color: ${({ color }) => handleTextColor(color)};
+  @media (max-width: 400px) {
+    padding: 2em 2em;
+  }
 `;
 
 const Content = styled.div`
