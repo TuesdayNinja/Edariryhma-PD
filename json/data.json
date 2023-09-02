@@ -64,14 +64,14 @@
             "nimi": "Sonja Jokinen",
             "ala": "Taloustiede",
             "kuva": "sonja.jpg"
-        }
-    ],
-    "varat":[
+        },
         {
             "nimi": "Aleksanteri Skaniakos",
             "ala": "Tietojärjestelmätiede",
             "kuva": "allu.jpg"
-        },
+        }
+    ],
+    "varat":[
         {
             "nimi": "Violan Halmetoja",
             "ala": "Taloustiede",
