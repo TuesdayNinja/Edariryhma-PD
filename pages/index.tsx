@@ -155,10 +155,10 @@ const Home: NextPage<LocalData> = ({ localData }) => {
                   puoluepoliittisesti sitoutumaton edustajistoryhmä.
                 </BigText>
                 <p>
-                  Tällä hetkellä ryhmä koostuu Pörssi ry:n, Dumppi ry:n ja
-                  Stimulus ry:n opiskelijoista, mutta toivotamme kaikki
-                  edustajiston toiminnasta tai edustajana toimimisesta
-                  kiinnostuneet mukaan toimintaan!
+                  Tällä hetkellä ryhmä koostuu Pörssi ry:n, Dumppi ry:n,
+                  Stimulus ry:n ja Sporticus ry:n opiskelijoista, mutta
+                  toivotamme kaikki edustajiston toiminnasta tai edustajana
+                  toimimisesta kiinnostuneet mukaan toimintaan!
                 </p>
                 <BigText>Opiskelijoiden ääni</BigText>
                 <p>
@@ -236,7 +236,7 @@ const Home: NextPage<LocalData> = ({ localData }) => {
               <h2>PD JYYn edustajistossa</h2>
               <h3>Varsinaiset edustajat</h3>
               <PeopleGrid people={localData.varsinaiset} />
-              <h3>Vara edustajat</h3>
+              <h3>Varaedustajat</h3>
               <PeopleGrid people={localData.varat} />
               <h2>PD muissa luottamustoimissa</h2>
               <PeopleGrid people={localData.muut} />
