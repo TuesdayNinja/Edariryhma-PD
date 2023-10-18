@@ -38,6 +38,7 @@ const PolaroidImageContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 1em;
+  position: relative;
   @media (max-width: 1200px) {
     height: 18em;
   }

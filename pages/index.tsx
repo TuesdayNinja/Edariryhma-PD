@@ -7,6 +7,7 @@ import ContentBlock from "../components/ContentBlock";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PeopleGrid from "../components/PeopleGrid";
+import PeopleGridNumber from "../components/PeopleGridNumber";
 import { getLocalData } from "../lib/localdata";
 
 type Person = {
@@ -15,11 +16,19 @@ type Person = {
   kuva: string;
 };
 
+type PersonWithNumber = {
+  nimi: string;
+  ala: string;
+  kuva: string;
+  numero: string;
+};
+
 interface DataContent {
   varsinaiset: Person[];
   varat: Person[];
   hallitus: Person[];
   muut: Person[];
+  ehdokkaat: PersonWithNumber[];
 }
 
 interface LocalData {
@@ -218,9 +227,16 @@ const Home: NextPage<LocalData> = ({ localData }) => {
               </InstagramGrid>
             </div>
           </ContentBlock>
-          <ContentBlock id="edustajat" color="grey">
+          <ContentBlock id="vaalit" color="grey">
             <div>
-              <h1>Edustajat</h1>
+              <h1>Edustajistovaalit 2023</h1>
+              <h2>Ehdokkaat</h2>
+              <PeopleGridNumber people={localData.ehdokkaat} />
+            </div>
+          </ContentBlock>
+          <ContentBlock id="edustajat" color="white">
+            <div>
+              <h1>Edustajat 2022-2023</h1>
               <p>
                 P&D:n edustajat toimivat useissa eri Jyväskylän yliopiston ja
                 Jyväskylän yliopiston ylioppilaskunnan vaikuttamiselimissä,

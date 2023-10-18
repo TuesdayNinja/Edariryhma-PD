@@ -64,14 +64,14 @@
             "nimi": "Sonja Jokinen",
             "ala": "Taloustiede",
             "kuva": "sonja.jpg"
-        },
+        }
+    ],
+    "varat":[
         {
             "nimi": "Aleksanteri Skaniakos",
             "ala": "Tietojärjestelmätiede",
             "kuva": "allu.jpg"
-        }
-    ],
-    "varat":[
+        },
         {
             "nimi": "Violan Halmetoja",
             "ala": "Taloustiede",
@@ -131,5 +131,165 @@
             "ala": "JYYn liiketoimintajohtokunnan opiskelijajäsen",
             "kuva": "sonja.jpg"
         }
+    ],
+    "ehdokkaat":[
+            {
+            "nimi": "Loviisa Hurme",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "loviisa23.jpg",
+            "numero": "123"
+            },
+           {
+            "nimi": "Teemu Haarala",
+            "ala": "Teknologiajohtaminen",
+            "kuva": "Teemu23.jpg",
+            "numero": "134"
+            },
+           {
+            "nimi": "Noora Ryhänen",
+            "ala": "Sosiaalityö",
+            "kuva": "Noora23.jpg",
+            "numero": "126"
+            },
+            {
+            "nimi": "Juho Hyytinen",
+            "ala": "Taloustiede",
+            "kuva": "HyytinenJuho_010.jpg",
+            "numero": "119"
+            },
+           {
+            "nimi": "Inka Kauppinen",
+            "ala": "Psykologia",
+            "kuva": "inka23.jpg",
+            "numero": "116"
+            },
+           {
+            "nimi": "Esa Häkkinen",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "jyye_pd_2024_EsaHäkkinen.jpg",
+            "numero": "112"
+            },
+           {
+            "nimi": "Miia Alvejärvi",
+            "ala": "Taloustiede",
+            "kuva": "AlvejarviMiia.jpg",
+            "numero": "125"
+            },
+           {
+            "nimi": "Leo Janhonen",
+            "ala": "Taloustiede",
+            "kuva": "LeoJ23.jpg",
+            "numero": "122"
+            },
+           {
+            "nimi": "Aleksanteri Skaniakos",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "Aleksanteri23.jpg",
+            "numero": "108"
+            },
+           {
+            "nimi": "Henri Blomqvist",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "jussi23_1.jpeg",
+            "numero": "114"
+            },
+           {
+           "nimi": "Julius Savolainen",
+           "ala": "Kyberturvallisuus",
+           "kuva": "Julius.jpg",
+            "numero": "120"
+           },
+           {
+            "nimi": "Elias Happonen",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "Elias23.jpg",
+            "numero": "111"
+            },
+           {
+           "nimi": "Leevi Leijon",
+           "ala": "Viestinnän johtaminen",
+           "kuva": "Leevi.JPG",
+           "numero": "121"
+           },
+           {
+            "nimi": "Sonja Julkunen",
+            "ala": "Taloustiede",
+            "kuva": "SonjaJu23.jpg",
+            "numero": "133"
+            },
+           {
+            "nimi": "Siiri Papinniemi",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "SiiriPa.jpg",
+            "numero": "131"
+            },
+           {
+            "nimi": "Peetu Kupiainen",
+            "ala": "Taloustiede",
+            "kuva": "placeholder.png",
+            "numero": "129"
+            },
+           {
+           "nimi":  "Ossi Kleimolai",
+           "ala":  "Taloustiede",
+           "kuva": "Ossi23.jpg",
+            "numero": "127"
+            },
+           {
+           "nimi": "Riku Metsäharju",
+            "ala": "Taloustiede",
+            "kuva": "Riku.PNG",
+            "numero": "130"
+            },
+           {
+            "nimi": "Violan Halmetoja",
+            "ala": "Taloustiede",
+            "kuva": "ViolanH.jpeg",
+            "numero": "135"
+            },
+           {
+            "nimi": "Matias Winter",
+            "ala": "Taloustiede",
+            "kuva": "WinterMatias.JPG",
+            "numero": "124"
+            },
+           {
+            "nimi": "Sonja Jokinen",
+            "ala": "Taloustiede",
+            "kuva": "sonja_520.jpg",
+            "numero": "132"
+            },
+           {
+            "nimi": "Mikael Vilhunen",
+            "ala": "Taloustiede",
+            "kuva": "vilhunenmikael.jpg",
+            "numero": "109"
+            },
+           {
+            "nimi": "Eero Jussila",
+            "ala": "Taloustiede",
+            "kuva": "EeroJ.jpg",
+            "numero": "110"
+            },
+            {
+                "nimi": "Aku Buckbee",
+                "ala": "Johtaminen",
+                "kuva": "akubuckbee.jpg",
+                "numero": "107"
+                },
+            {
+                "nimi": "Jani Risikko",
+                "ala": "Terveyskasvatus",
+                "kuva": "Jani Risikko.jpg",
+                "numero": "118"
+                },
+            {
+                "nimi": "Otto Valkamo",
+                "ala": "Taloustiede",
+                "kuva": "OttoValkamo.jpg",
+                "numero": "128"
+                }     
+     
+           
     ]
 }
