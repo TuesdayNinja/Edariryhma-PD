@@ -18,7 +18,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   z-index: 10;
-  @media (max-width: 900px) {
+  @media (max-width: 1000px) {
     height: 4em;
     padding: 0.5em 1em;
   }
@@ -38,7 +38,7 @@ const Links = styled.div<MobileProps>`
   height: 100%;
   color: #567daf;
   font-weight: 600;
-  @media (max-width: 900px) {
+  @media (max-width: 1000px) {
     display: ${({ open }) => (open ? "flex" : "none")};
     position: absolute;
     top: 0;
@@ -46,7 +46,7 @@ const Links = styled.div<MobileProps>`
     background-color: #e3e5f1;
     width: 100%;
     margin-top: 4em;
-    height: 18em;
+    height: 20em;
     flex-direction: column;
   }
 `;
@@ -58,7 +58,7 @@ const MobileWrapper = styled.div`
 const MenuIcon = styled(Menu)`
   display: none;
   color: #383838;
-  @media (max-width: 900px) {
+  @media (max-width: 1000px) {
     height: 3em;
     width: auto;
     display: block;
@@ -68,7 +68,7 @@ const MenuIcon = styled(Menu)`
 const XIcon = styled(X)`
   display: none;
   color: #383838;
-  @media (max-width: 900px) {
+  @media (max-width: 1000px) {
     height: 3em;
     width: auto;
     display: block;
@@ -86,7 +86,7 @@ const Logo = styled.div`
   span:last-child {
     color: #567daf;
   }
-  @media (max-width: 900px) {
+  @media (max-width: 1000px) {
   }
 `;
 
@@ -116,6 +116,11 @@ const Header = () => {
           <Link href="/#tapa-toimia">
             <LinkContent onClick={() => setMobileMenuOpen(false)}>
               Tapa toimia
+            </LinkContent>
+          </Link>
+          <Link href="/#vaalit">
+            <LinkContent onClick={() => setMobileMenuOpen(false)}>
+              Edustajistovaalit
             </LinkContent>
           </Link>
           <Link href="/#edustajat">

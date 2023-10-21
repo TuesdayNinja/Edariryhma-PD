@@ -208,7 +208,7 @@
            {
            "nimi": "Leevi Leijon",
            "ala": "Viestinnän johtaminen",
-           "kuva": "Leevi23.JPG",
+           "kuva": "Leevi23.JPEG",
            "numero": "121"
            },
            {
@@ -226,7 +226,7 @@
            {
             "nimi": "Peetu Kupiainen",
             "ala": "Taloustiede",
-            "kuva": "placeholder.png",
+            "kuva": "kupiainen_peetu.jpg",
             "numero": "129"
             },
            {
@@ -288,8 +288,24 @@
                 "ala": "Taloustiede",
                 "kuva": "OttoValkamo.jpg",
                 "numero": "128"
-                }     
-     
-           
+                },
+                {
+                    "nimi": "Aaron Bondfolk",
+                    "ala": "Tietojärjestelmätiede",
+                    "kuva": "AaronBondfolk.jpg",
+                    "numero": "106"
+                    },
+                    {
+                       "nimi": "Fanni Rantala",
+                       "ala": "Tietojärjestelmätiede",
+                       "kuva": "placeholder.png",
+                       "numero": "113"
+                     },
+                    {
+                       "nimi": "Hilma Hintikka",
+                       "ala": "Johtaminen",
+                       "kuva": "Hilma.jpg",
+                       "numero": "115"
+                     }      
     ]
 }
