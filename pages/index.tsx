@@ -145,10 +145,12 @@ const Home: NextPage<LocalData> = ({ localData }) => {
   return (
     <div>
       <Head>
-        <title>Edariryhmä PD - Mukana JYYn edustajistovaaleissa 2023!</title>
+        <title>
+          Edariryhmä PD - puoluepoliittisesti sitoutumaton JYYn edustajistoryhmä
+        </title>
         <meta
           name="description"
-          content="PD on Jyväskylän yliopiston ylioppilaskunnan puoluepoliittisesti sitoutumaton edustajistoryhmä. Tällä hetkellä ryhmä koostuu Pörssi ry:n, Dumppi ry:n, Stimulus ry:n ja Sporticus ry:n opiskelijoista. Ryhmä on aiemmin tunnettu nimillä P&amp;D sekä Pörssi&amp;Dumppi."
+          content="PD on Jyväskylän yliopiston ylioppilaskunnan puoluepoliittisesti sitoutumaton edustajistoryhmä, joka koostuu Pörssi ry:n, Dumppi ry:n, Stimulus ry:n ja Sporticus ry:n opiskelijoista. Ryhmä on aiemmin tunnettu nimillä P&amp;D sekä Pörssi&amp;Dumppi."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
