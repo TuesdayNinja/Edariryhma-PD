@@ -246,6 +246,19 @@ const Home: NextPage<LocalData> = ({ localData }) => {
           <ContentBlock id="ehdokkaat" color="grey">
             <div>
               <h1>JYYn edustajistovaalit 2023</h1>
+              <p>
+                Voit äänestää ehdokkaitamme ennakkoäänestyspäiviniä
+                30.10.-3.11.2023 tai varsinaisina vaalipäivinä 7.11.-8.11.2023
+                verkossa{" "}
+                <a
+                  href="https://jyy.fi/aanesta/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  jyy.fi/aanesta
+                </a>{" "}
+                ja se vie vain noin minuutin!
+              </p>
               <h2>Ehdokkaat JYYn edustajistoon 2024-2025</h2>
               <PeopleGridNumber people={localData.ehdokkaat} />
             </div>
