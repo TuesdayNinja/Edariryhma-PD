@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "@styled-icons/boxicons-regular";
@@ -18,14 +17,15 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   z-index: 10;
-  @media (max-width: 1000px) {
+  @media (max-width: 1050px) {
     height: 4em;
     padding: 0.5em 1em;
   }
 `;
 
 const LinkContent = styled.a`
-  font-size: 1.5em;
+  font-size: 1.2em;
+  text-decoration: none;
   :hover {
     text-decoration: underline;
   }
@@ -38,7 +38,7 @@ const Links = styled.div<MobileProps>`
   height: 100%;
   color: #567daf;
   font-weight: 600;
-  @media (max-width: 1000px) {
+  @media (max-width: 1050px) {
     display: ${({ open }) => (open ? "flex" : "none")};
     position: absolute;
     top: 0;
@@ -46,7 +46,7 @@ const Links = styled.div<MobileProps>`
     background-color: #e3e5f1;
     width: 100%;
     margin-top: 4em;
-    height: 20em;
+    height: 22em;
     flex-direction: column;
   }
 `;
@@ -58,7 +58,7 @@ const MobileWrapper = styled.div`
 const MenuIcon = styled(Menu)`
   display: none;
   color: #383838;
-  @media (max-width: 1000px) {
+  @media (max-width: 1050px) {
     height: 3em;
     width: auto;
     display: block;
@@ -68,7 +68,7 @@ const MenuIcon = styled(Menu)`
 const XIcon = styled(X)`
   display: none;
   color: #383838;
-  @media (max-width: 1000px) {
+  @media (max-width: 1050px) {
     height: 3em;
     width: auto;
     display: block;
@@ -86,7 +86,7 @@ const Logo = styled.div`
   span:last-child {
     color: #567daf;
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 1050px) {
   }
 `;
 
@@ -118,9 +118,14 @@ const Header = () => {
               Tapa toimia
             </LinkContent>
           </Link>
-          <Link href="/#vaalit">
+          <Link href="/#ehdokkaat">
             <LinkContent onClick={() => setMobileMenuOpen(false)}>
-              Edustajistovaalit
+              Edustajistovaaliehdokkaat
+            </LinkContent>
+          </Link>
+          <Link href="/#vaaliOhjelma">
+            <LinkContent onClick={() => setMobileMenuOpen(false)}>
+              Vaaliohjelma
             </LinkContent>
           </Link>
           <Link href="/#edustajat">

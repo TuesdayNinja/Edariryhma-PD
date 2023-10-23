@@ -45,17 +45,17 @@ const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
     scroll-padding-top: 5em;
     width: 100%;
-    @media (max-width: 900px) {
+    @media (max-width: 1050px) {
       scroll-padding-top: 4em;
     }
   }
 
   a {
     color: inherit;
-    text-decoration: none;
     cursor: pointer;
+    text-decoration: underline;
     :hover{
-      text-decoration: underline;
+      font-weight: 600;
     }
   }
   * {
@@ -66,7 +66,7 @@ const GlobalStyle = createGlobalStyle`
 const Content = styled.div`
   width: 100%;
   margin-top: 5em;
-  @media (max-width: 900px) {
+  @media (max-width: 1050px) {
     margin-top: 4em;
   }
 `;
@@ -133,6 +133,14 @@ const ContactGrid = styled.div`
   }
 `;
 
+const RedPoint = styled.h3`
+  color: #d45858;
+`;
+
+const BluePoint = styled.h3`
+  color: #567daf;
+`;
+
 export async function getStaticProps({}) {
   const localData: LocalData = await getLocalData();
 
@@ -177,13 +185,19 @@ const Home: NextPage<LocalData> = ({ localData }) => {
                   myös Järjestöjen Ääni- yhteistyöryhmittymään Alvarin Unionin
                   ja Luonnontieteilijöiden kanssa.
                 </p>
-                <BigText>Lähde ehdolle!</BigText>
+                <BigText>Äänestä JYYn edustajistovaaleissa 2023!</BigText>
                 <p>
-                  Haluatko lähteä ehdolle 2023 edustajistovaaleissa PDn
-                  listalla?&nbsp;
-                  <a href="mailto:vitimaha@student.jyu.fi,hihisihi@student.jyu.fi">
-                    Ota yhteyttä ryhmävastaaviimme!
-                  </a>
+                  Tutstu vaaliohjelmaamme sekä ehdokkaisiimme ja äänestä PDtä
+                  ennakkoäänestyspäiviniä 30.10.-3.11.2023 tai varsinaisina
+                  vaalipäivinä 7.11.-8.11.2023! Äänestää voit verkossa{" "}
+                  <a
+                    href="https://jyy.fi/aanesta/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    jyy.fi/aanesta
+                  </a>{" "}
+                  ja se vie vain noin minuutin.
                 </p>
               </div>
               <HeroPolaroidImageContainer>
@@ -229,14 +243,159 @@ const Home: NextPage<LocalData> = ({ localData }) => {
               </InstagramGrid>
             </div>
           </ContentBlock>
-          <ContentBlock id="vaalit" color="grey">
+          <ContentBlock id="ehdokkaat" color="grey">
             <div>
-              <h1>Edustajistovaalit 2023</h1>
-              <h2>Ehdokkaat</h2>
+              <h1>JYYn edustajistovaalit 2023</h1>
+              <h2>Ehdokkaat JYYn edustajistoon 2024-2025</h2>
               <PeopleGridNumber people={localData.ehdokkaat} />
             </div>
           </ContentBlock>
-          <ContentBlock id="edustajat" color="white">
+          <ContentBlock id="vaaliOhjelma" color="white">
+            <div>
+              <h2>PDn vaaliohjelma</h2>
+              <p>
+                Tavoitteemme on olla mukana luomassa kaikkien opiskelijoiden
+                ylioppilaskuntaa. Haluamme olla jokaista opiskelijaa varten
+                juuri se edustajisto, joka ajaa opiskelijoiden asiaa,
+                kampusrajoja tai oppiainetaustoja huomioimatta. Meille tärkeintä
+                on välittää opiskelijoiden tarpeita sitoutumatta kansallisesti
+                poliittisiin agendoihin. Olemme itse tavallisia opiskelijoita,
+                jotka ovat kiinnostuneita edistämään ylioppilaskunnan
+                rivijäsenen etuja. Kauttamme voit siis vaikuttaa siihen, että
+                ylioppilaskunnassa keskustellaan arkeemme vaikuttavista
+                asioista.
+              </p>
+              <p>
+                Edariryhmä PD valmistautuu vuoden 2023 käytävään vaalikauteen
+                noudattaen seuraavia vaalikärkiä. Tavoitteemme on luoda vielä
+                ennen edustajistokauden alkua tarkempi suunnitelma siitä, miten
+                ja missä vaiheessa 2-vuotista kautta puramme kärkiaiheitamme
+                edustajiston kokouksissa.
+              </p>
+              <BigText>
+                &quot;Agoralta lähtöisin oleva järjestölähtöinen
+                vaaliliitto&quot;
+              </BigText>
+              <RedPoint>Edistetään yhdenvertaisuutta</RedPoint>
+              <h4>Yhdenvertainen haalarikansa</h4>
+              <p>
+                Emme suvaitse minkään näköistä syrjintää tai toiseuttavaa
+                toimintaa. Tahtotilamme on kuitenkin puuttua nyt oppiaineita
+                kohtaan kohdistuvaan syrjintään.{" "}
+              </p>
+              <p>
+                Moni ehdokkaistamme on törmännyt opintojensa aikana
+                pörssivihaan. Ei mikään ihmisen ominaisuus oikeuta toista
+                sylkemään päälle tai huutelemaan rumia asioita. Miksi opintoala
+                sitten oikeuttaisi siihen? Ehdokkaidemme toimesta
+                yhdenvertaisista toimista tullaan keskustelemaan, jotta
+                kenenkään ei tarvitsisi törmätä olettamuksiin yliopistoon
+                tullessa, myöskään oppiaineeseen liittyen.{" "}
+              </p>
+              <h4>Kansainvälisyys</h4>
+              <p>
+                Yliopiston tahtotila on kansainvälistyä. Se on läpileikkaava
+                teema strategiassa. Pelkästään sanat paperilla eivät auta
+                kansainvälisiä opiskelijoita sopeutumaan ja osallistumaan
+                toimintaamme.{" "}
+              </p>
+              <p>
+                PD haluaa avata edustajiston keskustelun siitä, mikä on
+                tahtotila liikkua kohti kansainvälisten opiskelijoiden aseman
+                parantamista. Kysymykset jäävät muuten roikkumaan ilmaan siitä:{" "}
+              </p>
+              <ul>
+                <li>
+                  Miten ylioppilaskunta haluaa ja voi parantaa kansainvälisten
+                  opiskelijoiden osallisuutta ja osallistumista toimintaansa?
+                </li>
+                <li>
+                  Miten sama yliopiston suuntaan? Mitä asioita ylioppilaskunta
+                  voi vaatia yliopistolta osallisuuden mahdollistamiseksi ja
+                  kaiken palvelun kehittämiseksi (kaksikieliseksi)?
+                </li>
+              </ul>
+              <RedPoint>Alennetaan jäsenmaksuja</RedPoint>
+              <h4>Järkevällä liiketoiminnalla</h4>
+              <p>
+                JYYn liiketoiminnassa on tyhjäkäyntiä, mikä maksatetaan
+                jäsenillä. Ylioppilaskunta mielletään erityisesti
+                edunvalvontaorganisaationa. Siitä huolimatta vain murto-osa
+                jokaisen opiskelijan vuosittaisista jäsenmaksuista menee itse
+                varsinaiseen edunvalvontaan. Sen sijaan, jäsenet maksavat
+                vuosittaisesta lukuvuosimaksustaan viidenneksen sellaisten
+                kohteiden remonttien kattamiseen, joiden strateginen tavoite on
+                palvella enemmän muita, kuin opiskelijoita.{" "}
+              </p>
+              <p>
+                Tavoitteenamme on keskustelluttaa JYYn liiketoimintaa siitä,
+                miten se saataisiin käymään jäsenmaksujen puolesta vähemmän
+                tyhjäkäynnillä ja miten palveluista saisi jäsenmaksun arvoista
+              </p>
+              <h4>Yritysyhteistyön kautta</h4>
+              <p>
+                Kauan on toivottu sitä, että JYY näyttäisi esimerkkiä
+                yritysyhteistyön tekemisessä ja pystyisi tuottamaan sen kautta
+                rahallista arvoa pienentääkseen jäsenmaksuja ja parantaakseen
+                palveluiden laatua. Ylioppilaskunta on kuitenkin hankala
+                esimerkki siitä, miten yhdistyksen tai järjestön tulisi tuottaa
+                rahaa yritysyhteistyön kautta. Vaikka myytävää ei ole paljon,
+                sitä kuitenkin on.{" "}
+              </p>
+              <p>
+                Pullonkaulaksi muodostuu se, ettei nyky kaavassaan
+                organisaatiossa ole ketään kuka tekee. Jos
+                edunvalvontaorganisaation jokaisen tekijän työpöytä on täynnä,
+                eikä kenenkään työnkuvaan kuulu yritysyhteistyön luominen, millä
+                ajalla niitä sitten luodaan? Aiomme keskustelluttaa edustajistoa
+                muun muassa hallituksen roolien uudelleen tarkasteluun.{" "}
+              </p>
+              <RedPoint>Parempi StudentLife</RedPoint>
+              <h4>Tietoisuuden ja näkyvyyden kehittäminen</h4>
+              <p>
+                Emme taida olla ainoat, joille StudentLife tuo mielikuvan
+                pyöräilevistä ihmisistä oranssilla taustalla? Emme kuitenkaan
+                saa mielikuvaa kansallisessa yliopistoyhteisössä ylistetystä
+                mielenterveyden hyvinvointipalveluista. Brändäyksessä on jotain
+                pielessä, jos palvelu toimii logiikalla tietäjät tietää.{" "}
+              </p>
+              <p>
+                PD:n tahtotila on saada edustajisto vaatimaan StudentLifen
+                kehittämistä, jotta se kertoisi jo ensimmäisestä sanasta alkaen
+                palvelun ylivertaisuudesta ja tulisi lähemmäksi opiskelijoita,
+                jotta he löytäisivät avun piiriin.
+              </p>
+              <h4>Miten olisi psykologi?</h4>
+              <p>
+                Meidän makuun on terapia takuu. Opintopsykologeja Jyväskylän
+                yliopistolle ei ole kuitenkaan tulossa lisää, koska meillä on jo
+                psykologeja, jotka eivät ole kuitenkaan psykologeja. Eikö
+                StudentLife kuulostakin riittävän yksinkertaiselta keinolta
+                saada apua mielenterveyden haasteisiin?
+              </p>
+              <p>
+                Opiskelijoiden mielenterveyden hyvinvointipalvelu ei mielestämme
+                ole valmis vielä, vaikka sen tietoisuutta saataisiin
+                parannettua. Palvelu on rakennettu taitavasti, mutta siellä ei
+                ole opintopsykologeja. Jos sinäkin haluat opintopsykologeja,
+                niin vaaditaan niitä yhdessä. PD haluaa edustajiston luomaan
+                painetta StudentLifen kokonaisvaltaiseen kehittämiseen
+                vastaamaan nykyopiskeluympäristön tarpeita.{" "}
+              </p>
+              <BluePoint>
+                Miksi tehdä vain jotain, jos edarissa voi tehdä Parasta Duunia?
+              </BluePoint>
+              <p>
+                Haluamme kaikkien opiskelijoiden JYYn. Siksi haluamme
+                opiskeljoille tärkeiden asioiden edistyvän ylioppilaskunnassa.
+                Emme aja kansallista poliittista teemaa, vaan keskitymme tähän
+                kampusalueeseen. Siksi mielestämme ylioppilaskunnassa käytävän
+                keskustelun pitäisi koskea opiskelijoitamme ja heidän etujaan.
+                Kampus on opiskelijoita varten, sinua varten!
+              </p>
+            </div>
+          </ContentBlock>
+          <ContentBlock id="edustajat" color="grey">
             <div>
               <h1>Edustajat 2022-2023</h1>
               <p>
