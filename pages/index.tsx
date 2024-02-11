@@ -243,24 +243,28 @@ const Home: NextPage<LocalData> = ({ localData }) => {
               </InstagramGrid>
             </div>
           </ContentBlock>
-          <ContentBlock id="ehdokkaat" color="grey">
+          <ContentBlock id="edustajat" color="grey">
             <div>
-              <h1>JYYn edustajistovaalit 2023</h1>
+              <h1>Edustajat 2024-2025</h1>
               <p>
-                Voit äänestää ehdokkaitamme ennakkoäänestyspäiviniä
-                30.10.-3.11.2023 tai varsinaisina vaalipäivinä 7.11.-8.11.2023
-                verkossa{" "}
-                <a
-                  href="https://jyy.fi/aanesta/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  jyy.fi/aanesta
-                </a>{" "}
-                ja se vie vain noin minuutin!
+                P&D:n edustajat toimivat useissa eri Jyväskylän yliopiston ja
+                Jyväskylän yliopiston ylioppilaskunnan vaikuttamiselimissä,
+                kuten ylioppilaskunnan edustajistossa ja hallituksessa,
+                yliopistokollegiossa, ylioppilaslehden johtokunnassa jne.
+                Vaikuttamispaikat vaihtelevat jonkin verran vuosittain, mutta
+                kaikilla rintamilla tehdään silti jatkuvaa edunvalvontatyötä
+                Jyväskylän yliopiston opiskelijoiden eteen.
               </p>
-              <h2>Ehdokkaat JYYn edustajistoon 2024-2025</h2>
-              <PeopleGridNumber people={localData.ehdokkaat} />
+
+              <h2>PD JYYn hallituksessa ja edustajiston puheejohtajistossa</h2>
+              <PeopleGrid people={localData.hallitus} />
+              <h2>PD JYYn edustajistossa</h2>
+              <h3>Varsinaiset edustajat</h3>
+              <PeopleGrid people={localData.varsinaiset} />
+              <h3>Varaedustajat</h3>
+              <PeopleGrid people={localData.varat} />
+              <h2>PD muissa luottamustoimissa</h2>
+              <PeopleGrid people={localData.muut} />
             </div>
           </ContentBlock>
           <ContentBlock id="vaaliOhjelma" color="white">
@@ -406,30 +410,6 @@ const Home: NextPage<LocalData> = ({ localData }) => {
                 keskustelun pitäisi koskea opiskelijoitamme ja heidän etujaan.
                 Kampus on opiskelijoita varten, sinua varten!
               </p>
-            </div>
-          </ContentBlock>
-          <ContentBlock id="edustajat" color="grey">
-            <div>
-              <h1>Edustajat 2022-2023</h1>
-              <p>
-                P&D:n edustajat toimivat useissa eri Jyväskylän yliopiston ja
-                Jyväskylän yliopiston ylioppilaskunnan vaikuttamiselimissä,
-                kuten ylioppilaskunnan edustajistossa ja hallituksessa,
-                yliopistokollegiossa, ylioppilaslehden johtokunnassa jne.
-                Vaikuttamispaikat vaihtelevat jonkin verran vuosittain, mutta
-                kaikilla rintamilla tehdään silti jatkuvaa edunvalvontatyötä
-                Jyväskylän yliopiston opiskelijoiden eteen.
-              </p>
-
-              <h2>PD JYYn hallituksessa ja edustajiston puheejohtajistossa</h2>
-              <PeopleGrid people={localData.hallitus} />
-              <h2>PD JYYn edustajistossa</h2>
-              <h3>Varsinaiset edustajat</h3>
-              <PeopleGrid people={localData.varsinaiset} />
-              <h3>Varaedustajat</h3>
-              <PeopleGrid people={localData.varat} />
-              <h2>PD muissa luottamustoimissa</h2>
-              <PeopleGrid people={localData.muut} />
             </div>
           </ContentBlock>
           <ContentBlock id="ota-yhteytta" color="red">

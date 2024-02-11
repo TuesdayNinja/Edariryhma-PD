@@ -1,128 +1,164 @@
 {
     "varsinaiset":[
         {
-            "nimi": "Aku Buckbee",
-            "ala": "Taloustiede",
-            "kuva": "aku.jpg"
-        },
-        {
             "nimi": "Inka Kauppinen",
             "ala": "Psykologia",
-            "kuva": "inka.jpeg"
+            "kuva": "inka23.jpg"
         },
         {
-            "nimi": "Emma Laine",
-            "ala": "Viestinnän johtaminen",
-            "kuva": "emma.png"
+            "nimi": "Matias Winter",
+            "ala": "Taloustiede",
+            "kuva": "WinterMatias.JPG"
         },
         {
-            "nimi": "Sara Kangasmaa",
-            "ala": "Psykologia",
-            "kuva": "sara.jpeg"
+            "nimi": "Aku Buckbee",
+            "ala": "Johtaminen",
+            "kuva": "akubuckbee.jpg"
+        },
+        {
+            "nimi": "Aleksanteri Skaniakos",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "AleksanteriSkaniakos-2.jpg"
+        },
+        {
+            "nimi": "Jani Risikko",
+            "ala": "Terveyskasvatus",
+            "kuva": "JaniRisikko.jpg"
+        },
+        {
+            "nimi": "Teemu Haarala",
+            "ala": "Teknologiajohtaminen",
+            "kuva": "Teemu23.jpg"
+        },
+        {
+            "nimi": "Noora Ryhänen",
+            "ala": "Sosiaalityö",
+            "kuva": "Noora23.jpg"
         },
         {
             "nimi": "Hilma Hintikka",
             "ala": "Johtaminen",
-            "kuva": "hilma.jpg"
+            "kuva": "Hilma.jpg"
         },
         {
-            "nimi": "Vili Vuorela",
-            "ala": "Turvallisuus ja strateginen analyysi",
-            "kuva": "vili.jpeg"
+            "nimi": "Siiri Papinniemi",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "SiiriPa.jpg"
         },
         {
-            "nimi": "Eero Jussila",
+            "nimi": "Leevi Leijon",
+            "ala": "Viestinnän johtaminen",
+            "kuva": "Leevi23.JPEG"
+        },
+        {
+            "nimi":  "Ossi Kleimolai",
+            "ala":  "Taloustiede",
+            "kuva": "Ossi23.jpg"
+        },
+        {
+            "nimi": "Henri Blomqvist",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "jussi23_1.jpeg"
+        }
+
+    ],
+    "varat":[
+        {
+            "nimi": "Peetu Kupiainen",
             "ala": "Taloustiede",
-            "kuva": "eero.jpg"
+            "kuva": "kupiainen_peetu.jpg"
         },
         {
-            "nimi": "Loviisa Hurme",
-            "ala": "Tietojärjestelmätiede",
-            "kuva": "loviisa.jpeg"
-        },
-        {
-            "nimi": "Emmi Tossavainen",
-            "ala": "Tietojärjestelmätiede",
-            "kuva": "emmi.jpeg"
-        },
-        {
-            "nimi": "Teemu Haarala",
-            "ala": "Tietojärjestelmätiede",
-            "kuva": "teemu.jpg"
-        },
-        {
-            "nimi": "Sini Annamaa",
-            "ala": "Tietojärjestelmätiede",
-            "kuva": "sini.jpg"
-        },
-        {
-            "nimi": "Jeremias Colliander",
-            "ala": "Tietojärjestelmätiede",
-            "kuva": "jeremias.jpg"
+            "nimi": "Miia Alvejärvi",
+            "ala": "Taloustiede",
+            "kuva": "AlvejarviMiia.jpg"
         },
         {
             "nimi": "Sonja Jokinen",
             "ala": "Taloustiede",
-            "kuva": "sonja.jpg"
-        }
-    ],
-    "varat":[
-        {
-            "nimi": "Aleksanteri Skaniakos",
-            "ala": "Tietojärjestelmätiede",
-            "kuva": "allu.jpg"
+            "kuva": "sonja_520.jpg"
         },
         {
-            "nimi": "Violan Halmetoja",
+            "nimi": "Leo Janhonen",
             "ala": "Taloustiede",
-            "kuva": "violan.jpg"
+            "kuva": "LeoJ23.jpg"
         },
         {
-            "nimi": "Ville Nissinen",
+            "nimi": "Aaron Bondfolk",
             "ala": "Tietojärjestelmätiede",
-            "kuva": "ville.jpg"
+            "kuva": "AaronBondfolk.jpg"
         },
         {
-            "nimi": "Mia Kaleton",
+            "nimi": "Eero Jussila",
+            "ala": "Taloustiede",
+            "kuva": "EeroJ.jpg"
+        },
+        {
+            "nimi": "Loviisa Hurme",
             "ala": "Tietojärjestelmätiede",
-            "kuva": "mia.jpg"
+            "kuva": "loviisa23.jpeg"
         },
         {
-            "nimi": "Noora Lempinen",
-            "ala": "Laskentatoimi",
-            "kuva": "noora.jpg"
+            "nimi": "Mikael Vilhunen",
+            "ala": "Taloustiede",
+            "kuva": "vilhunenmikael.jpg"
         },
         {
-            "nimi": "Fanni Rantala",
+            "nimi": "Juho Hyytinen",
+            "ala": "Taloustiede",
+            "kuva": "HyytinenJuho_010.jpg"
+        },
+        {
+            "nimi": "Elias Happonen",
             "ala": "Tietojärjestelmätiede",
-            "kuva": "fanni.jpg"
-        },
-        {
-            "nimi": "Aija Hokkanen",
-            "ala": "Corporate Environmental Management",
-            "kuva": "aija.jpg"
+            "kuva": "Elias23.jpg"
         },
         {
             "nimi": "Sonja Julkunen",
             "ala": "Taloustiede",
-            "kuva": "sonjaJu.jpg"
+            "kuva": "SonjaJu23.jpg"
+        },
+        {
+            "nimi": "Riku Metsäharju",
+             "ala": "Taloustiede",
+             "kuva": "rikumetsaharju.jpg"
+        },
+        {
+            "nimi": "Otto Valkamo",
+            "ala": "Taloustiede",
+            "kuva": "OttoValkamo.jpg"
+        },
+        {
+            "nimi": "Esa Häkkinen",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "jyye_pd_2024_EsaHäkkinen.jpg"
+        },
+        {
+            "nimi": "Ivan Blagodelev",
+            "ala": "Taloustiede",
+            "kuva": "placeholder.png"
         }
     ],
     "hallitus":[
         {
-            "nimi": "Teemu Haarala",
-            "ala": "Hallituslainen järjestöt ja yritysyhteistyö",
-            "kuva": "teemu.jpg"
+            "nimi": "Violan Halmetoja",
+            "ala": "Varapuheenjohtaja, Liiketoiminta",
+            "kuva": "ViolanH23.jpeg"
         },
         {
-            "nimi": "Jani Risikko",
-            "ala": "Hallituslainen sosiallipolitiikka, hyvinvointi ja liikunta",
-            "kuva": "jani.jpg"
+            "nimi": "Maaria Leppänen",
+            "ala": "Kestävyys (kehitysyhteistyö ja ympäristö) ja yritysyhteistyö",
+            "kuva": "Maaria-Leppanen.png"
         },
         {
-            "nimi": "Loviisa Hurme",
-            "ala": "Edustajiston varapuheenjohtaja",
-            "kuva": "loviisa.jpeg"
+            "nimi": "Juho Hyytinen",
+            "ala": "Kuntapolitiikka",
+            "kuva": "Juho-Hyytinen.png"
+        },
+        {
+            "nimi": "Hilma Hintikka",
+            "ala": "Edustajiston puheenjohtaja",
+            "kuva": "Hilma.jpg"
         }
     ],
     "muut":[
@@ -131,181 +167,5 @@
             "ala": "JYYn liiketoimintajohtokunnan opiskelijajäsen",
             "kuva": "sonja.jpg"
         }
-    ],
-    "ehdokkaat":[
-            {
-            "nimi": "Loviisa Hurme",
-            "ala": "Tietojärjestelmätiede",
-            "kuva": "loviisa23.jpeg",
-            "numero": "123"
-            },
-           {
-            "nimi": "Teemu Haarala",
-            "ala": "Teknologiajohtaminen",
-            "kuva": "Teemu23.jpg",
-            "numero": "134"
-            },
-           {
-            "nimi": "Noora Ryhänen",
-            "ala": "Sosiaalityö",
-            "kuva": "Noora23.jpg",
-            "numero": "126"
-            },
-            {
-            "nimi": "Juho Hyytinen",
-            "ala": "Taloustiede",
-            "kuva": "HyytinenJuho_010.jpg",
-            "numero": "119"
-            },
-           {
-            "nimi": "Inka Kauppinen",
-            "ala": "Psykologia",
-            "kuva": "inka23.jpg",
-            "numero": "116"
-            },
-           {
-            "nimi": "Esa Häkkinen",
-            "ala": "Tietojärjestelmätiede",
-            "kuva": "jyye_pd_2024_EsaHäkkinen.jpg",
-            "numero": "112"
-            },
-           {
-            "nimi": "Miia Alvejärvi",
-            "ala": "Taloustiede",
-            "kuva": "AlvejarviMiia.jpg",
-            "numero": "125"
-            },
-           {
-            "nimi": "Leo Janhonen",
-            "ala": "Taloustiede",
-            "kuva": "LeoJ23.jpg",
-            "numero": "122"
-            },
-           {
-            "nimi": "Aleksanteri Skaniakos",
-            "ala": "Tietojärjestelmätiede",
-            "kuva": "AleksanteriSkaniakos-2.jpg",
-            "numero": "108"
-            },
-           {
-            "nimi": "Henri Blomqvist",
-            "ala": "Tietojärjestelmätiede",
-            "kuva": "jussi23_1.jpeg",
-            "numero": "114"
-            },
-           {
-           "nimi": "Julius Savolainen",
-           "ala": "Kyberturvallisuus",
-           "kuva": "Julius.jpg",
-            "numero": "120"
-           },
-           {
-            "nimi": "Elias Happonen",
-            "ala": "Tietojärjestelmätiede",
-            "kuva": "Elias23.jpg",
-            "numero": "111"
-            },
-           {
-           "nimi": "Leevi Leijon",
-           "ala": "Viestinnän johtaminen",
-           "kuva": "Leevi23.JPEG",
-           "numero": "121"
-           },
-           {
-            "nimi": "Sonja Julkunen",
-            "ala": "Taloustiede",
-            "kuva": "SonjaJu23.jpg",
-            "numero": "133"
-            },
-           {
-            "nimi": "Siiri Papinniemi",
-            "ala": "Tietojärjestelmätiede",
-            "kuva": "SiiriPa.jpg",
-            "numero": "131"
-            },
-           {
-            "nimi": "Peetu Kupiainen",
-            "ala": "Taloustiede",
-            "kuva": "kupiainen_peetu.jpg",
-            "numero": "129"
-            },
-           {
-           "nimi":  "Ossi Kleimolai",
-           "ala":  "Taloustiede",
-           "kuva": "Ossi23.jpg",
-            "numero": "127"
-            },
-           {
-           "nimi": "Riku Metsäharju",
-            "ala": "Taloustiede",
-            "kuva": "Riku.PNG",
-            "numero": "130"
-            },
-           {
-            "nimi": "Violan Halmetoja",
-            "ala": "Taloustiede",
-            "kuva": "ViolanH23.jpeg",
-            "numero": "135"
-            },
-           {
-            "nimi": "Matias Winter",
-            "ala": "Taloustiede",
-            "kuva": "WinterMatias.JPG",
-            "numero": "124"
-            },
-           {
-            "nimi": "Sonja Jokinen",
-            "ala": "Taloustiede",
-            "kuva": "sonja_520.jpg",
-            "numero": "132"
-            },
-           {
-            "nimi": "Mikael Vilhunen",
-            "ala": "Taloustiede",
-            "kuva": "vilhunenmikael.jpg",
-            "numero": "109"
-            },
-           {
-            "nimi": "Eero Jussila",
-            "ala": "Taloustiede",
-            "kuva": "EeroJ.jpg",
-            "numero": "110"
-            },
-            {
-                "nimi": "Aku Buckbee",
-                "ala": "Johtaminen",
-                "kuva": "akubuckbee.jpg",
-                "numero": "107"
-                },
-            {
-                "nimi": "Jani Risikko",
-                "ala": "Terveyskasvatus",
-                "kuva": "JaniRisikko.jpg",
-                "numero": "118"
-                },
-            {
-                "nimi": "Otto Valkamo",
-                "ala": "Taloustiede",
-                "kuva": "OttoValkamo.jpg",
-                "numero": "128"
-                },
-                {
-                    "nimi": "Aaron Bondfolk",
-                    "ala": "Tietojärjestelmätiede",
-                    "kuva": "AaronBondfolk.jpg",
-                    "numero": "106"
-                    },
-                    {
-                       "nimi": "Fanni Rantala",
-                       "ala": "Tietojärjestelmätiede",
-                       "kuva": "placeholder.png",
-                       "numero": "113"
-                     },
-                    {
-                       "nimi": "Hilma Hintikka",
-                       "ala": "Johtaminen",
-                       "kuva": "Hilma.jpg",
-                       "numero": "115"
-                     }      
     ]
 }
