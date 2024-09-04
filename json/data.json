@@ -6,11 +6,6 @@
             "kuva": "inka23.jpg"
         },
         {
-            "nimi": "Matias Winter",
-            "ala": "Taloustiede",
-            "kuva": "WinterMatias.JPG"
-        },
-        {
             "nimi": "Aku Buckbee",
             "ala": "Johtaminen",
             "kuva": "akubuckbee.jpg"
@@ -19,11 +14,6 @@
             "nimi": "Aleksanteri Skaniakos",
             "ala": "Tietojärjestelmätiede",
             "kuva": "AleksanteriSkaniakos-2.jpg"
-        },
-        {
-            "nimi": "Jani Risikko",
-            "ala": "Terveyskasvatus",
-            "kuva": "JaniRisikko.jpg"
         },
         {
             "nimi": "Teemu Haarala",
@@ -59,14 +49,6 @@
             "nimi": "Henri Blomqvist",
             "ala": "Tietojärjestelmätiede",
             "kuva": "jussi23_1.jpeg"
-        }
-
-    ],
-    "varat":[
-        {
-            "nimi": "Peetu Kupiainen",
-            "ala": "Taloustiede",
-            "kuva": "kupiainen_peetu.jpg"
         },
         {
             "nimi": "Miia Alvejärvi",
@@ -77,6 +59,13 @@
             "nimi": "Sonja Jokinen",
             "ala": "Taloustiede",
             "kuva": "sonja_520.jpg"
+        }
+    ],
+    "varat":[
+        {
+            "nimi": "Peetu Kupiainen",
+            "ala": "Taloustiede",
+            "kuva": "kupiainen_peetu.jpg"
         },
         {
             "nimi": "Leo Janhonen",
@@ -131,12 +120,12 @@
         {
             "nimi": "Esa Häkkinen",
             "ala": "Tietojärjestelmätiede",
-            "kuva": "jyye_pd_2024_EsaHäkkinen.jpg"
+            "kuva": "Esa.jpg"
         },
         {
             "nimi": "Ivan Blagodelev",
             "ala": "Taloustiede",
-            "kuva": "placeholder.png"
+            "kuva": "Ivan01.jpg"
         }
     ],
     "hallitus":[

@@ -181,23 +181,9 @@ const Home: NextPage<LocalData> = ({ localData }) => {
                 </p>
                 <BigText>Opiskelijoiden ääni</BigText>
                 <p>
-                  Olemme JYYn edustajiston suurin ryhmä 12 edustajalla. Kuulumme
-                  myös Järjestöjen Ääni- yhteistyöryhmittymään Alvarin Unionin
-                  ja Luonnontieteilijöiden kanssa.
-                </p>
-                <BigText>Äänestä JYYn edustajistovaaleissa 2023!</BigText>
-                <p>
-                  Tutstu vaaliohjelmaamme sekä ehdokkaisiimme ja äänestä PDtä
-                  ennakkoäänestyspäiviniä 30.10.-3.11.2023 tai varsinaisina
-                  vaalipäivinä 7.11.-8.11.2023! Äänestää voit verkossa{" "}
-                  <a
-                    href="https://jyy.fi/aanesta/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    jyy.fi/aanesta
-                  </a>{" "}
-                  ja se vie vain noin minuutin.
+                  Olemme JYYn edustajiston toisiksisuurin ryhmä 12 edustajalla.
+                  Kuulumme myös Järjestöjen Ääni- yhteistyöryhmittymään Alvarin
+                  Unionin ja Luonnontieteilijöiden kanssa.
                 </p>
               </div>
               <HeroPolaroidImageContainer>
@@ -418,17 +404,17 @@ const Home: NextPage<LocalData> = ({ localData }) => {
               <h3> Ryhmävastaavat</h3>
               <ContactGrid>
                 <span>
-                  Violan Halmetoja
+                  Teemu Haarala
                   <br />
-                  <a href="mailto:vitimaha@student.jyu.fi">
-                    vitimaha@student.jyu.fi
+                  <a href="mailto:haarates@student.jyu.fi">
+                    vhaarates@student.jyu.fi
                   </a>
                 </span>
                 <span>
-                  Hilma Hintikka
+                  Mikael Vilhunen
                   <br />
-                  <a href="mailto:hihisihi@student.jyu.fi">
-                    hihisihi@student.jyu.fi
+                  <a href="mailto:vilhunem@student.jyu.fi">
+                    vilhunem@student.jyu.fi
                   </a>
                 </span>
               </ContactGrid>
