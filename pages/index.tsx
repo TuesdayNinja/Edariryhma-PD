@@ -404,17 +404,17 @@ const Home: NextPage<LocalData> = ({ localData }) => {
               <h3> Ryhmävastaavat</h3>
               <ContactGrid>
                 <span>
-                  Teemu Haarala
-                  <br />
-                  <a href="mailto:haarates@student.jyu.fi">
-                    vhaarates@student.jyu.fi
-                  </a>
-                </span>
-                <span>
                   Mikael Vilhunen
                   <br />
                   <a href="mailto:vilhunem@student.jyu.fi">
                     vilhunem@student.jyu.fi
+                  </a>
+                </span>
+                <span>
+                  Aleksanteri Skaniakos
+                  <br />
+                  <a href="mailto:aldiskan@student.jyu.fi">
+                    aldiskan@student.jyu.fi
                   </a>
                 </span>
               </ContactGrid>

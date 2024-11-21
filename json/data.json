@@ -56,31 +56,16 @@
             "kuva": "AlvejarviMiia.jpg"
         },
         {
-            "nimi": "Sonja Jokinen",
+            "nimi": "Leo Janhonen",
             "ala": "Taloustiede",
-            "kuva": "sonja_520.jpg"
+            "kuva": "LeoJ23.jpg"
         }
     ],
     "varat":[
         {
-            "nimi": "Peetu Kupiainen",
-            "ala": "Taloustiede",
-            "kuva": "kupiainen_peetu.jpg"
-        },
-        {
-            "nimi": "Leo Janhonen",
-            "ala": "Taloustiede",
-            "kuva": "LeoJ23.jpg"
-        },
-        {
             "nimi": "Aaron Bondfolk",
             "ala": "Tietojärjestelmätiede",
             "kuva": "AaronBondfolk.jpg"
-        },
-        {
-            "nimi": "Eero Jussila",
-            "ala": "Taloustiede",
-            "kuva": "EeroJ.jpg"
         },
         {
             "nimi": "Loviisa Hurme",
@@ -91,11 +76,6 @@
             "nimi": "Mikael Vilhunen",
             "ala": "Taloustiede",
             "kuva": "vilhunenmikael.jpg"
-        },
-        {
-            "nimi": "Juho Hyytinen",
-            "ala": "Taloustiede",
-            "kuva": "HyytinenJuho_010.jpg"
         },
         {
             "nimi": "Elias Happonen",
