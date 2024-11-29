@@ -41,7 +41,7 @@
             "kuva": "Leevi23.JPEG"
         },
         {
-            "nimi":  "Ossi Kleimolai",
+            "nimi":  "Ossi Kleimola",
             "ala":  "Taloustiede",
             "kuva": "Ossi23.jpg"
         },
@@ -56,31 +56,16 @@
             "kuva": "AlvejarviMiia.jpg"
         },
         {
-            "nimi": "Sonja Jokinen",
+            "nimi": "Leo Janhonen",
             "ala": "Taloustiede",
-            "kuva": "sonja_520.jpg"
+            "kuva": "LeoJ23.jpg"
         }
     ],
     "varat":[
         {
-            "nimi": "Peetu Kupiainen",
-            "ala": "Taloustiede",
-            "kuva": "kupiainen_peetu.jpg"
-        },
-        {
-            "nimi": "Leo Janhonen",
-            "ala": "Taloustiede",
-            "kuva": "LeoJ23.jpg"
-        },
-        {
             "nimi": "Aaron Bondfolk",
             "ala": "Tietojärjestelmätiede",
             "kuva": "AaronBondfolk.jpg"
-        },
-        {
-            "nimi": "Eero Jussila",
-            "ala": "Taloustiede",
-            "kuva": "EeroJ.jpg"
         },
         {
             "nimi": "Loviisa Hurme",
@@ -150,11 +135,23 @@
             "kuva": "Hilma.jpg"
         }
     ],
+    "hallitus25":[
+        {
+            "nimi": "Suvi Toivanen",
+            "ala": "Viestintä",
+            "kuva": "suvitoivanen24.jpg"
+        },
+        {
+            "nimi": "Niko Tuokko",
+            "ala": "Yrityssuhteet",
+            "kuva": "nikotuokko24.jpg"
+        } 
+    ],
     "muut":[
         {
-            "nimi": "Sonja Jokinen",
-            "ala": "JYYn liiketoimintajohtokunnan opiskelijajäsen",
-            "kuva": "sonja.jpg"
+            "nimi": "Loviisa Hurme",
+            "ala": "Jyväskylän ylioppilaslehden johtokunta",
+            "kuva": "loviisa23.jpeg"
         }
     ]
 }

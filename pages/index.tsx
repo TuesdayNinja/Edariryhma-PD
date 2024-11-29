@@ -27,6 +27,7 @@ interface DataContent {
   varsinaiset: Person[];
   varat: Person[];
   hallitus: Person[];
+  hallitus25: Person[];
   muut: Person[];
   ehdokkaat: PersonWithNumber[];
 }
@@ -175,13 +176,13 @@ const Home: NextPage<LocalData> = ({ localData }) => {
                 </BigText>
                 <p>
                   Tällä hetkellä ryhmä koostuu Pörssi ry:n, Dumppi ry:n,
-                  Stimulus ry:n ja Sporticus ry:n opiskelijoista, mutta
+                  Stimulus ry:n, Fokus ry:n ja Interventio ry:n opiskelijoista, mutta
                   toivotamme kaikki edustajiston toiminnasta tai edustajana
                   toimimisesta kiinnostuneet mukaan toimintaan!
                 </p>
                 <BigText>Opiskelijoiden ääni</BigText>
                 <p>
-                  Olemme JYYn edustajiston toisiksisuurin ryhmä 12 edustajalla.
+                  Olemme JYYn edustajiston toisiksi suurin ryhmä 12 edustajalla.
                   Kuulumme myös Järjestöjen Ääni- yhteistyöryhmittymään Alvarin
                   Unionin ja Luonnontieteilijöiden kanssa.
                 </p>
@@ -233,7 +234,7 @@ const Home: NextPage<LocalData> = ({ localData }) => {
             <div>
               <h1>Edustajat 2024-2025</h1>
               <p>
-                P&D:n edustajat toimivat useissa eri Jyväskylän yliopiston ja
+                PD:n edustajat toimivat useissa eri Jyväskylän yliopiston ja
                 Jyväskylän yliopiston ylioppilaskunnan vaikuttamiselimissä,
                 kuten ylioppilaskunnan edustajistossa ja hallituksessa,
                 yliopistokollegiossa, ylioppilaslehden johtokunnassa jne.
@@ -269,11 +270,8 @@ const Home: NextPage<LocalData> = ({ localData }) => {
                 asioista.
               </p>
               <p>
-                Edariryhmä PD valmistautuu vuoden 2023 käytävään vaalikauteen
-                noudattaen seuraavia vaalikärkiä. Tavoitteemme on luoda vielä
-                ennen edustajistokauden alkua tarkempi suunnitelma siitä, miten
-                ja missä vaiheessa 2-vuotista kautta puramme kärkiaiheitamme
-                edustajiston kokouksissa.
+                Seuraavat vaalikärjet ovat toimineet perustanamme kuluvan kauden ajan, 
+                ja tulemme ajamaan niitä myös 2025 edustajistovaalien yhteydessä.
               </p>
               <BigText>
                 &quot;Agoralta lähtöisin oleva järjestölähtöinen
