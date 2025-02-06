@@ -118,11 +118,6 @@ const Header = () => {
               Tapa toimia
             </LinkContent>
           </Link>
-          <Link href="/#ehdokkaat">
-            <LinkContent onClick={() => setMobileMenuOpen(false)}>
-              Edustajistovaaliehdokkaat
-            </LinkContent>
-          </Link>
           <Link href="/#vaaliOhjelma">
             <LinkContent onClick={() => setMobileMenuOpen(false)}>
               Vaaliohjelma

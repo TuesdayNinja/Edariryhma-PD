@@ -41,6 +41,11 @@
             "kuva": "Leevi23.JPEG"
         },
         {
+            "nimi": "Violan Halmetoja",
+            "ala": "Varapuheenjohtaja, Liiketoiminta",
+            "kuva": "ViolanH23.jpeg"
+        },
+        {
             "nimi":  "Ossi Kleimola",
             "ala":  "Taloustiede",
             "kuva": "Ossi23.jpg"
@@ -54,14 +59,14 @@
             "nimi": "Miia Alvejärvi",
             "ala": "Taloustiede",
             "kuva": "AlvejarviMiia.jpg"
-        },
+        }
+    ],
+    "varat":[
         {
             "nimi": "Leo Janhonen",
             "ala": "Taloustiede",
             "kuva": "LeoJ23.jpg"
-        }
-    ],
-    "varat":[
+        },
         {
             "nimi": "Aaron Bondfolk",
             "ala": "Tietojärjestelmätiede",
@@ -111,28 +116,6 @@
             "nimi": "Ivan Blagodelev",
             "ala": "Taloustiede",
             "kuva": "Ivan01.jpg"
-        }
-    ],
-    "hallitus":[
-        {
-            "nimi": "Violan Halmetoja",
-            "ala": "Varapuheenjohtaja, Liiketoiminta",
-            "kuva": "ViolanH23.jpeg"
-        },
-        {
-            "nimi": "Maaria Leppänen",
-            "ala": "Kestävyys (kehitysyhteistyö ja ympäristö) ja yritysyhteistyö",
-            "kuva": "Maaria-Leppanen.png"
-        },
-        {
-            "nimi": "Juho Hyytinen",
-            "ala": "Kuntapolitiikka",
-            "kuva": "Juho-Hyytinen.png"
-        },
-        {
-            "nimi": "Hilma Hintikka",
-            "ala": "Edustajiston puheenjohtaja",
-            "kuva": "Hilma.jpg"
         }
     ],
     "hallitus25":[

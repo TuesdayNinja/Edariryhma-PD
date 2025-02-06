@@ -7,7 +7,6 @@ import ContentBlock from "../components/ContentBlock";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PeopleGrid from "../components/PeopleGrid";
-import PeopleGridNumber from "../components/PeopleGridNumber";
 import { getLocalData } from "../lib/localdata";
 
 type Person = {
@@ -26,7 +25,6 @@ type PersonWithNumber = {
 interface DataContent {
   varsinaiset: Person[];
   varat: Person[];
-  hallitus: Person[];
   hallitus25: Person[];
   muut: Person[];
   ehdokkaat: PersonWithNumber[];
@@ -171,7 +169,7 @@ const Home: NextPage<LocalData> = ({ localData }) => {
             <Hero>
               <div>
                 <BigText>
-                  <b>PD</b> on Jyväskylän yliopiston ylioppilaskunnan
+                  <b>PD</b> on Jyväskylän Yliopiston Ylioppilaskunnan
                   puoluepoliittisesti sitoutumaton edustajistoryhmä.
                 </BigText>
                 <p>
@@ -189,8 +187,8 @@ const Home: NextPage<LocalData> = ({ localData }) => {
               </div>
               <HeroPolaroidImageContainer>
                 <Image
-                  src="/meidanjengi.jpg"
-                  height={900}
+                  src="/meidanjengi2.jpg"
+                  height={800}
                   width={800}
                   alt="Meidän jengi"
                 />
@@ -243,8 +241,8 @@ const Home: NextPage<LocalData> = ({ localData }) => {
                 Jyväskylän yliopiston opiskelijoiden eteen.
               </p>
 
-              <h2>PD JYYn hallituksessa ja edustajiston puheejohtajistossa</h2>
-              <PeopleGrid people={localData.hallitus} />
+              <h2>PD JYYn hallituksessa</h2>
+              <PeopleGrid people={localData.hallitus25} />
               <h2>PD JYYn edustajistossa</h2>
               <h3>Varsinaiset edustajat</h3>
               <PeopleGrid people={localData.varsinaiset} />
