@@ -174,9 +174,9 @@ const Home: NextPage<LocalData> = ({ localData }) => {
                 </BigText>
                 <p>
                   Tällä hetkellä ryhmä koostuu Pörssi ry:n, Dumppi ry:n,
-                  Stimulus ry:n, Fokus ry:n ja Interventio ry:n opiskelijoista, mutta
-                  toivotamme kaikki edustajiston toiminnasta tai edustajana
-                  toimimisesta kiinnostuneet mukaan toimintaan!
+                  Stimulus ry:n, Fokus ry:n ja Interventio ry:n opiskelijoista,
+                  mutta toivotamme kaikki edustajiston toiminnasta tai
+                  edustajana toimimisesta kiinnostuneet mukaan toimintaan!
                 </p>
                 <BigText>Opiskelijoiden ääni</BigText>
                 <p>
@@ -268,8 +268,9 @@ const Home: NextPage<LocalData> = ({ localData }) => {
                 asioista.
               </p>
               <p>
-                Seuraavat vaalikärjet ovat toimineet perustanamme kuluvan kauden ajan, 
-                ja tulemme ajamaan niitä myös 2025 edustajistovaalien yhteydessä.
+                Seuraavat vaalikärjet ovat toimineet perustanamme kuluvan kauden
+                ajan, ja tulemme ajamaan niitä myös 2025 edustajistovaalien
+                yhteydessä.
               </p>
               <BigText>
                 &quot;Agoralta lähtöisin oleva järjestölähtöinen
@@ -400,17 +401,17 @@ const Home: NextPage<LocalData> = ({ localData }) => {
               <h3> Ryhmävastaavat</h3>
               <ContactGrid>
                 <span>
+                  Loviisa Hurme
+                  <br />
+                  <a href="mailto:hurmelol@student.jyu.fi">
+                    hurmelol@student.jyu.fi
+                  </a>
+                </span>
+                <span>
                   Mikael Vilhunen
                   <br />
                   <a href="mailto:vilhunem@student.jyu.fi">
                     vilhunem@student.jyu.fi
-                  </a>
-                </span>
-                <span>
-                  Aleksanteri Skaniakos
-                  <br />
-                  <a href="mailto:aldiskan@student.jyu.fi">
-                    aldiskan@student.jyu.fi
                   </a>
                 </span>
               </ContactGrid>

@@ -1,19 +1,9 @@
 {
     "varsinaiset":[
         {
-            "nimi": "Inka Kauppinen",
-            "ala": "Psykologia",
-            "kuva": "inka23.jpg"
-        },
-        {
             "nimi": "Aku Buckbee",
             "ala": "Johtaminen",
             "kuva": "akubuckbee.jpg"
-        },
-        {
-            "nimi": "Aleksanteri Skaniakos",
-            "ala": "Tietojärjestelmätiede",
-            "kuva": "AleksanteriSkaniakos-2.jpg"
         },
         {
             "nimi": "Teemu Haarala",
@@ -46,11 +36,6 @@
             "kuva": "ViolanH23.jpeg"
         },
         {
-            "nimi":  "Ossi Kleimola",
-            "ala":  "Taloustiede",
-            "kuva": "Ossi23.jpg"
-        },
-        {
             "nimi": "Henri Blomqvist",
             "ala": "Tietojärjestelmätiede",
             "kuva": "jussi23_1.jpeg"
@@ -59,9 +44,7 @@
             "nimi": "Miia Alvejärvi",
             "ala": "Taloustiede",
             "kuva": "AlvejarviMiia.jpg"
-        }
-    ],
-    "varat":[
+        },
         {
             "nimi": "Leo Janhonen",
             "ala": "Taloustiede",
@@ -76,7 +59,9 @@
             "nimi": "Loviisa Hurme",
             "ala": "Tietojärjestelmätiede",
             "kuva": "loviisa23.jpeg"
-        },
+        }
+    ],
+    "varat":[
         {
             "nimi": "Mikael Vilhunen",
             "ala": "Taloustiede",
@@ -91,11 +76,6 @@
             "nimi": "Elias Happonen",
             "ala": "Tietojärjestelmätiede",
             "kuva": "Elias23.jpg"
-        },
-        {
-            "nimi": "Sonja Julkunen",
-            "ala": "Taloustiede",
-            "kuva": "SonjaJu23.jpg"
         },
         {
             "nimi": "Riku Metsäharju",
