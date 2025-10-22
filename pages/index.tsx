@@ -7,6 +7,7 @@ import ContentBlock from "../components/ContentBlock";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PeopleGrid from "../components/PeopleGrid";
+import PeopleGridNumber from "../components/PeopleGridNumber";
 import { getLocalData } from "../lib/localdata";
 
 type Person = {
@@ -228,33 +229,16 @@ const Home: NextPage<LocalData> = ({ localData }) => {
               </InstagramGrid>
             </div>
           </ContentBlock>
-          <ContentBlock id="edustajat" color="grey">
+          <ContentBlock id="ehdokkaat" color="grey">
             <div>
-              <h1>Edustajat 2024-2025</h1>
-              <p>
-                PD:n edustajat toimivat useissa eri Jyväskylän yliopiston ja
-                Jyväskylän yliopiston ylioppilaskunnan vaikuttamiselimissä,
-                kuten ylioppilaskunnan edustajistossa ja hallituksessa,
-                yliopistokollegiossa, ylioppilaslehden johtokunnassa jne.
-                Vaikuttamispaikat vaihtelevat jonkin verran vuosittain, mutta
-                kaikilla rintamilla tehdään silti jatkuvaa edunvalvontatyötä
-                Jyväskylän yliopiston opiskelijoiden eteen.
-              </p>
-
-              <h2>PD JYYn hallituksessa</h2>
-              <PeopleGrid people={localData.hallitus25} />
-              <h2>PD JYYn edustajistossa</h2>
-              <h3>Varsinaiset edustajat</h3>
-              <PeopleGrid people={localData.varsinaiset} />
-              <h3>Varaedustajat</h3>
-              <PeopleGrid people={localData.varat} />
-              <h2>PD muissa luottamustoimissa</h2>
-              <PeopleGrid people={localData.muut} />
+              <h1>Ehdokkaat edustajistoon 2026-2027</h1>
+              <PeopleGridNumber people={localData.ehdokkaat} />
             </div>
           </ContentBlock>
           <ContentBlock id="vaaliOhjelma" color="white">
             <div>
-              <h2>PDn vaaliohjelma</h2>
+              <h1>PDn vaaliohjelma kaudelle 2024-2025</h1>
+              <h2>Vaaliohjelma 2026-2027 päivittyy lähempänä vaaleja</h2>
               <p>
                 Tavoitteemme on olla mukana luomassa kaikkien opiskelijoiden
                 ylioppilaskuntaa. Haluamme olla jokaista opiskelijaa varten
@@ -393,6 +377,30 @@ const Home: NextPage<LocalData> = ({ localData }) => {
                 keskustelun pitäisi koskea opiskelijoitamme ja heidän etujaan.
                 Kampus on opiskelijoita varten, sinua varten!
               </p>
+            </div>
+          </ContentBlock>
+          <ContentBlock id="edustajat" color="grey">
+            <div>
+              <h1>Edustajat 2024-2025</h1>
+              <p>
+                PD:n edustajat toimivat useissa eri Jyväskylän yliopiston ja
+                Jyväskylän yliopiston ylioppilaskunnan vaikuttamiselimissä,
+                kuten ylioppilaskunnan edustajistossa ja hallituksessa,
+                yliopistokollegiossa, ylioppilaslehden johtokunnassa jne.
+                Vaikuttamispaikat vaihtelevat jonkin verran vuosittain, mutta
+                kaikilla rintamilla tehdään silti jatkuvaa edunvalvontatyötä
+                Jyväskylän yliopiston opiskelijoiden eteen.
+              </p>
+
+              <h2>PD JYYn hallituksessa</h2>
+              <PeopleGrid people={localData.hallitus25} />
+              <h2>PD JYYn edustajistossa</h2>
+              <h3>Varsinaiset edustajat</h3>
+              <PeopleGrid people={localData.varsinaiset} />
+              <h3>Varaedustajat</h3>
+              <PeopleGrid people={localData.varat} />
+              <h2>PD muissa luottamustoimissa</h2>
+              <PeopleGrid people={localData.muut} />
             </div>
           </ContentBlock>
           <ContentBlock id="ota-yhteytta" color="red">

@@ -116,5 +116,121 @@
             "ala": "Jyväskylän ylioppilaslehden johtokunta",
             "kuva": "loviisa23.jpeg"
         }
+    ],
+    "ehdokkaat":[
+        {
+            "nimi": "Loviisa Hurme",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "loviisa23.jpeg",
+            "numero": "102"
+        },
+        {
+            "nimi": "Niko Tuokko",
+            "ala": "Taloustiede",
+            "kuva": "nikotuokko.jpg",
+            "numero": "103"
+        },
+        {
+            "nimi": "Venla Suosalo",
+            "ala": "Taloustiede",
+            "kuva": "VenlaSuosalo.jpg",
+            "numero": "104"
+        },
+        {
+            "nimi": "Marianne Törmä",
+            "ala": "Solu- ja molekyylibiologia",
+            "kuva": "MarianneTörmä.jpg",
+            "numero": "105"
+        },
+        {
+            "nimi": "Essi Pakkala",
+            "ala": "Teknologiajohtaminen",
+            "kuva": "EssiPakkala.jpg",
+            "numero": "106"
+        },
+        {
+            "nimi": "Silja Eerikäinen",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "SiljaEerikäinen.jpg",
+            "numero": "107"
+        },
+        {
+            "nimi": "Leo Salonen",
+            "ala": "Markkinointi",
+            "kuva": "LeoSalonen.jpg",
+            "numero": "108"
+        },
+        {
+            "nimi": "Siiri Papinniemi",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "SiiriPapinniemi.jpg",
+            "numero": "109"
+        },
+        {
+            "nimi": "Otto Valkamo",
+            "ala": "Taloustiede",
+            "kuva": "OttoValkamo.png",
+            "numero": "110"
+        },
+        {
+            "nimi": "Elena Palo",
+            "ala": "Taloustiede",
+            "kuva": "Elenapalo.jpg",
+            "numero": "111"
+        },
+        {
+            "nimi": "Santeri Penttinen",
+            "ala": "Taloustiede",
+            "kuva": "SanteriPenttinen.jpg",
+            "numero": "112"
+        },
+        {
+            "nimi": "Mario Alves",
+            "ala": "Masters in International business and entrepreneurship",
+            "kuva": "MarioAlves.png",
+            "numero": "113"
+        },
+        {
+            "nimi": "Niko Palkio",
+            "ala": "Kyberturvallisuus",
+            "kuva": "NikoPalkio.jpg",
+            "numero": "114"
+        },
+        {
+            "nimi": "Esa Häkkinen",
+            "ala": "Tietojärjestelmätiede",
+            "kuva": "EsaHäkkinen.jpg",
+            "numero": "115"
+        },
+        {
+            "nimi": "Hilma Hintikka",
+            "ala": "Johtaminen",
+            "kuva": "Hilma.jpg",
+            "numero": "116"
+        },
+        {
+            "nimi": "Violan Halmetoja",
+            "ala": "Taloustiede",
+            "kuva": "ViolanHalmetoja.JPEG",
+            "numero": "117"
+        },
+        {
+            "nimi": "Mikael Vilhunen",
+            "ala": "Taloustiede",
+            "kuva": "Mikaelvilhunen.jpeg",
+            "numero": "118"
+        },
+        {
+            "nimi": "Miia Alvejärvi",
+            "ala": "Taloustiede",
+            "kuva": "MiiaAlvejärvi.JPG",
+            "numero": "119"
+        },
+        {
+            "nimi": "Teemu Haarala",
+            "ala": "Teknologiajohtaminen",
+            "kuva": "teemu.jpg",
+            "numero": "120"
+        }
     ]
 }
