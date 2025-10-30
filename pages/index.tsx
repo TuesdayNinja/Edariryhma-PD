@@ -174,10 +174,19 @@ const Home: NextPage<LocalData> = ({ localData }) => {
                   puoluepoliittisesti sitoutumaton edustajistoryhmä.
                 </BigText>
                 <p>
-                  Tällä hetkellä ryhmä koostuu Pörssi ry:n, Dumppi ry:n,
-                  Stimulus ry:n, Fokus ry:n ja Interventio ry:n opiskelijoista,
-                  mutta toivotamme kaikki edustajiston toiminnasta tai
-                  edustajana toimimisesta kiinnostuneet mukaan toimintaan!
+                  Olemme tavallisia opiskelijoita, jotka ovat kiinnostuneita
+                  edistämään ylioppilaskunnan rivijäsenten etuja. Meille on
+                  tärkeää välittää opiskelijoiden tarpeita, emmekä ole
+                  sitoutuneet kansallisesti poliittisiin agendoihin.
+                  Tavoitteenamme on olla mukana luomassa kaikkien opiskelijoiden
+                  ylioppilaskuntaa ja haluamme ajaa opiskelijoiden asiaa
+                  kampuksesta tai oppiainetaustasta riippumatta.
+                </p>
+                <p>
+                  Tällä hetkellä ryhmä koostuu Pörssi ry:n, Dumppi ry:n, Algo
+                  ry:n ja Syrinx ry:n opiskelijoista, mutta toivotamme kaikki
+                  edustajiston toiminnasta tai edustajana toimimisesta
+                  kiinnostuneet mukaan toimintaan!
                 </p>
                 <BigText>Opiskelijoiden ääni</BigText>
                 <p>
@@ -237,8 +246,7 @@ const Home: NextPage<LocalData> = ({ localData }) => {
           </ContentBlock>
           <ContentBlock id="vaaliOhjelma" color="white">
             <div>
-              <h1>PDn vaaliohjelma kaudelle 2024-2025</h1>
-              <h2>Vaaliohjelma 2026-2027 päivittyy lähempänä vaaleja</h2>
+              <h1>PDn vaaliohjelma kaudelle 2026-2027</h1>
               <p>
                 Tavoitteemme on olla mukana luomassa kaikkien opiskelijoiden
                 ylioppilaskuntaa. Haluamme olla jokaista opiskelijaa varten
@@ -251,31 +259,47 @@ const Home: NextPage<LocalData> = ({ localData }) => {
                 ylioppilaskunnassa keskustellaan arkeemme vaikuttavista
                 asioista.
               </p>
-              <p>
-                Seuraavat vaalikärjet ovat toimineet perustanamme kuluvan kauden
-                ajan, ja tulemme ajamaan niitä myös 2025 edustajistovaalien
-                yhteydessä.
-              </p>
               <BigText>
                 &quot;Agoralta lähtöisin oleva järjestölähtöinen
                 vaaliliitto&quot;
               </BigText>
+              <RedPoint>Alennetaan jäsenmaksuja</RedPoint>
+              <p>
+                Jäsenmaksuja tulisi pyrkiä alentamaan pitkällä aikavälillä
+                kuitenkin niin, että talous pysyy tasapainossa ja edunvalvonta
+                pysyy tehokkaana.
+              </p>
+              <h4>Järkevällä liiketoiminnalla</h4>
+              <p>
+                Ylioppilaskunta mielletään erityisesti
+                edunvalvontaorganisaationa. Siitä huolimatta vain murto-osa
+                jokaisen opiskelijan vuosittaisista jäsenmaksuista on mennyt
+                itse varsinaiseen edunvalvontaan. Viimeisimmän edustajistokauden
+                aikana myös PD oli mukana karsimassa kannattamatonta
+                liiketoimintaa.{" "}
+              </p>
+              <p>
+                Tavoiteenamme on vaatia kattavampaa tietoa edustajistolle
+                liiketoiminnan tilasta, jotta edustajisto voi tehdä tietoon
+                perustuvaa omistajaohjausta tehokkaasti ja varmistaa
+                liiketoiminnan kestävyyden.
+              </p>
+              <h4>Budjetoinnin tarkastelulla</h4>
+              <p>
+                Budjetista päätettäessä tulisi miettiä tarkkaan mihin yhteiset
+                varamme käytetään. Esimerkiksi ylioppilaslehti Jylkkärin asemaa
+                olisi hyvä tarkastella sillä sen osuus on tällä hetkellä noin 11
+                euroa jäsenmaksusta. Ollakseen hintansa arvoinen Jylkkärin
+                tulisi sopeutuu palvelemaan laajemmin opiskelijayhteisöä tai
+                rahoituksen tulisi riippua vähemmän jäsenmaksuista. Nyt tämä
+                hintava jäsenpalvelu on saatavilla vain suomeksi eikä sitä koeta
+                kyselyiden mukaan hyödylliseksi seminaarinmäen ulkopuolella.{" "}
+              </p>
+              <p>
+                Tavoitteenamme on nostaa talouskeskustelua vahvemmin esiin
+                edustajistossa.
+              </p>
               <RedPoint>Edistetään yhdenvertaisuutta</RedPoint>
-              <h4>Yhdenvertainen haalarikansa</h4>
-              <p>
-                Emme suvaitse minkään näköistä syrjintää tai toiseuttavaa
-                toimintaa. Tahtotilamme on kuitenkin puuttua nyt oppiaineita
-                kohtaan kohdistuvaan syrjintään.{" "}
-              </p>
-              <p>
-                Moni ehdokkaistamme on törmännyt opintojensa aikana
-                pörssivihaan. Ei mikään ihmisen ominaisuus oikeuta toista
-                sylkemään päälle tai huutelemaan rumia asioita. Miksi opintoala
-                sitten oikeuttaisi siihen? Ehdokkaidemme toimesta
-                yhdenvertaisista toimista tullaan keskustelemaan, jotta
-                kenenkään ei tarvitsisi törmätä olettamuksiin yliopistoon
-                tullessa, myöskään oppiaineeseen liittyen.{" "}
-              </p>
               <h4>Kansainvälisyys</h4>
               <p>
                 Yliopiston tahtotila on kansainvälistyä. Se on läpileikkaava
@@ -299,72 +323,52 @@ const Home: NextPage<LocalData> = ({ localData }) => {
                   kaiken palvelun kehittämiseksi (kaksikieliseksi)?
                 </li>
               </ul>
-              <RedPoint>Alennetaan jäsenmaksuja</RedPoint>
-              <h4>Järkevällä liiketoiminnalla</h4>
+              <h4>Yhdenvertainen haalarikansa</h4>
               <p>
-                JYYn liiketoiminnassa on tyhjäkäyntiä, mikä maksatetaan
-                jäsenillä. Ylioppilaskunta mielletään erityisesti
-                edunvalvontaorganisaationa. Siitä huolimatta vain murto-osa
-                jokaisen opiskelijan vuosittaisista jäsenmaksuista menee itse
-                varsinaiseen edunvalvontaan. Sen sijaan, jäsenet maksavat
-                vuosittaisesta lukuvuosimaksustaan viidenneksen sellaisten
-                kohteiden remonttien kattamiseen, joiden strateginen tavoite on
-                palvella enemmän muita, kuin opiskelijoita.{" "}
+                Emme suvaitse minkään näköistä syrjintää tai toiseuttavaa
+                toimintaa. Tahtotilamme on kuitenkin puuttua nyt oppiaineita
+                kohtaan kohdistuvaan syrjintään. Ehdokkaidemme toimesta
+                yhdenvertaisista toimista tullaan keskustelemaan, jotta
+                kenenkään ei tarvitsisi törmätä olettamuksiin yliopistoon
+                tullessa, myöskään oppiaineeseen liittyen.{" "}
+              </p>
+              <RedPoint>Tilat taattava opiskeluun ja järjestöille</RedPoint>
+              <h4>24/7 opiskelutilat takaisin</h4>
+              <p>
+                Opiskelijoilla on erilaisia elämäntilanteita ja opintojen
+                edistäminen usein saattaa venyä toimistoaikojen ulkopuolelle.
+                Yliopistolla tulisi olla tilat joissa opiskelijat voivat
+                työskennellä heille sopivimpaan aikaan.{" "}
               </p>
               <p>
-                Tavoitteenamme on keskustelluttaa JYYn liiketoimintaa siitä,
-                miten se saataisiin käymään jäsenmaksujen puolesta vähemmän
-                tyhjäkäynnillä ja miten palveluista saisi jäsenmaksun arvoista
+                Optimi tilanteessa koko kampus olisi avoinna opiskelijoille
+                ympäri vuorokauden. Mikäli yliopiston tilapalvelut eivät tähän
+                taivu, selvityksen arvoista olisi voisiko ylioppilaskunnan
+                omistaman Opinkiven tiloja muokata 24/7 tiloiksi.
               </p>
-              <h4>Yritysyhteistyön kautta</h4>
+              <h4>Pidetään kiinni ainejärjestötiloista </h4>
               <p>
-                Kauan on toivottu sitä, että JYY näyttäisi esimerkkiä
-                yritysyhteistyön tekemisessä ja pystyisi tuottamaan sen kautta
-                rahallista arvoa pienentääkseen jäsenmaksuja ja parantaakseen
-                palveluiden laatua. Ylioppilaskunta on kuitenkin hankala
-                esimerkki siitä, miten yhdistyksen tai järjestön tulisi tuottaa
-                rahaa yritysyhteistyön kautta. Vaikka myytävää ei ole paljon,
-                sitä kuitenkin on.{" "}
-              </p>
-              <p>
-                Pullonkaulaksi muodostuu se, ettei nyky kaavassaan
-                organisaatiossa ole ketään kuka tekee. Jos
-                edunvalvontaorganisaation jokaisen tekijän työpöytä on täynnä,
-                eikä kenenkään työnkuvaan kuulu yritysyhteistyön luominen, millä
-                ajalla niitä sitten luodaan? Aiomme keskustelluttaa edustajistoa
-                muun muassa hallituksen roolien uudelleen tarkasteluun.{" "}
-              </p>
-              <RedPoint>Parempi StudentLife</RedPoint>
-              <h4>Tietoisuuden ja näkyvyyden kehittäminen</h4>
-              <p>
-                Emme taida olla ainoat, joille StudentLife tuo mielikuvan
-                pyöräilevistä ihmisistä oranssilla taustalla? Emme kuitenkaan
-                saa mielikuvaa kansallisessa yliopistoyhteisössä ylistetystä
-                mielenterveyden hyvinvointipalveluista. Brändäyksessä on jotain
-                pielessä, jos palvelu toimii logiikalla tietäjät tietää.{" "}
+                Ainejärjestöillä tulee olla toimintaan soveltuvat ja riittävän
+                kokoiset tilat. Järjestötilat rakentavat yhteisöllisyyttä, kun
+                opiskelijat voivat tiloissa hengähtää luentojen välissä,
+                opiskella tai ihan vain viettää aikaa ja tutustua muihin saman
+                alan opiskelijoihin. Lisäksi tilat toimivat toimistoina, joissa
+                järjestötoimijat voivat palvella jäsenistöä.
               </p>
               <p>
-                PD:n tahtotila on saada edustajisto vaatimaan StudentLifen
-                kehittämistä, jotta se kertoisi jo ensimmäisestä sanasta alkaen
-                palvelun ylivertaisuudesta ja tulisi lähemmäksi opiskelijoita,
-                jotta he löytäisivät avun piiriin.
+                Haluamme tuoda esiin järjestötilojen tärkeyttä ja varmistaa,
+                että yliopisto huomioi järjestötilat tilahankkeissaan.{" "}
               </p>
-              <h4>Miten olisi psykologi?</h4>
+              <RedPoint>JYU ja JAMK yhdistymiseen varautuminen</RedPoint>
+              <h4>Opitaan muiden virheistä</h4>
               <p>
-                Meidän makuun on terapia takuu. Opintopsykologeja Jyväskylän
-                yliopistolle ei ole kuitenkaan tulossa lisää, koska meillä on jo
-                psykologeja, jotka eivät ole kuitenkaan psykologeja. Eikö
-                StudentLife kuulostakin riittävän yksinkertaiselta keinolta
-                saada apua mielenterveyden haasteisiin?
-              </p>
-              <p>
-                Opiskelijoiden mielenterveyden hyvinvointipalvelu ei mielestämme
-                ole valmis vielä, vaikka sen tietoisuutta saataisiin
-                parannettua. Palvelu on rakennettu taitavasti, mutta siellä ei
-                ole opintopsykologeja. Jos sinäkin haluat opintopsykologeja,
-                niin vaaditaan niitä yhdessä. PD haluaa edustajiston luomaan
-                painetta StudentLifen kokonaisvaltaiseen kehittämiseen
-                vastaamaan nykyopiskeluympäristön tarpeita.{" "}
+                Muualla korkeakoulujen yhdistymisprojektit ovat aiheuttaneet
+                haittaa opiskeluun, kun kurssien laatu on kärsinyt joko liian
+                kiireellisesti tehdyn kurssien yhdistämisen tai liiallisen
+                yhdistämisen vuoksi. Näistä virheistä pitää oppia ja
+                ylioppilaskunnan tulee alkaa valmistautua hyvissä ajoin
+                yliopiston ja ammattikorkean yhdistymiseen, jotta pystymme
+                varmistamaan laadukkaan opetuksen jatkossakin.
               </p>
               <BluePoint>
                 Miksi tehdä vain jotain, jos edarissa voi tehdä Parasta Duunia?
