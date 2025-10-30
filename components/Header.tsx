@@ -21,7 +21,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   z-index: 10;
-  @media (max-width: 1050px) {
+  @media (max-width: 1200px) {
     height: 4em;
     padding: 0.5em 1em;
   }
@@ -50,7 +50,7 @@ const Links = styled.div<MobileProps>`
   height: 100%;
   color: #567daf;
   font-weight: 600;
-  @media (max-width: 1050px) {
+  @media (max-width: 1200px) {
     display: ${({ open }) => (open ? "flex" : "none")};
     position: absolute;
     top: 0;
@@ -70,7 +70,7 @@ const MobileWrapper = styled.div`
 const MenuIcon = styled(Menu)`
   display: none;
   color: #383838;
-  @media (max-width: 1050px) {
+  @media (max-width: 1200px) {
     height: 3em;
     width: auto;
     display: block;
@@ -80,7 +80,7 @@ const MenuIcon = styled(Menu)`
 const XIcon = styled(X)`
   display: none;
   color: #383838;
-  @media (max-width: 1050px) {
+  @media (max-width: 1200px) {
     height: 3em;
     width: auto;
     display: block;
@@ -98,8 +98,19 @@ const Logo = styled.div`
   span:last-child {
     color: #567daf;
   }
-  @media (max-width: 1050px) {
+  @media (max-width: 1200px) {
   }
+`;
+
+const Button = styled.div`
+  font-size: 1.2em;
+  background-color: #d45858;
+  color: white;
+  padding: 0.2em 0.6em;
+  border-radius: 10px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
 `;
 
 const Header = (language: Language) => {
@@ -121,6 +132,14 @@ const Header = (language: Language) => {
         )}
         {language.language == "en" ? (
           <Links open={mobileMenuOpen}>
+            <LinkContent
+              onClick={() => setMobileMenuOpen(false)}
+              href="https://vaalit.trevea.fi/jyy/voting/login.do"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button>Vote</Button>
+            </LinkContent>
             <Link href="/en/#tapa-toimia">
               <LinkContent onClick={() => setMobileMenuOpen(false)}>
                 Way of Working
@@ -154,6 +173,14 @@ const Header = (language: Language) => {
           </Links>
         ) : (
           <Links open={mobileMenuOpen}>
+            <LinkContent
+              onClick={() => setMobileMenuOpen(false)}
+              href="https://vaalit.trevea.fi/jyy/voting/login.do"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button>Äänestä</Button>
+            </LinkContent>
             <Link href="/#tapa-toimia">
               <LinkContent onClick={() => setMobileMenuOpen(false)}>
                 Tapa toimia

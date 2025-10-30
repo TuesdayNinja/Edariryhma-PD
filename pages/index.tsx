@@ -45,7 +45,7 @@ const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
     scroll-padding-top: 5em;
     width: 100%;
-    @media (max-width: 1050px) {
+    @media (max-width: 1200px) {
       scroll-padding-top: 4em;
     }
   }
@@ -66,7 +66,7 @@ const GlobalStyle = createGlobalStyle`
 const Content = styled.div`
   width: 100%;
   margin-top: 5em;
-  @media (max-width: 1050px) {
+  @media (max-width: 1200px) {
     margin-top: 4em;
   }
 `;
