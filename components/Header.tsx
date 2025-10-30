@@ -7,6 +7,10 @@ interface MobileProps {
   open: boolean;
 }
 
+type Language = {
+  language: string;
+};
+
 const Container = styled.div`
   height: 5em;
   width: 100%;
@@ -25,6 +29,14 @@ const Container = styled.div`
 
 const LinkContent = styled.a`
   font-size: 1.2em;
+  text-decoration: none;
+  :hover {
+    text-decoration: underline;
+  }
+`;
+
+const LanguageLink = styled.a`
+  font-size: 0.8em;
   text-decoration: none;
   :hover {
     text-decoration: underline;
@@ -90,7 +102,7 @@ const Logo = styled.div`
   }
 `;
 
-const Header = () => {
+const Header = (language: Language) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleMenuClick = () => setMobileMenuOpen(!mobileMenuOpen);
@@ -107,38 +119,73 @@ const Header = () => {
         ) : (
           <MenuIcon onClick={handleMenuClick} />
         )}
-        <Links open={mobileMenuOpen}>
-          <Link href="/#etusivu">
-            <LinkContent onClick={() => setMobileMenuOpen(false)}>
-              Etusivu
-            </LinkContent>
-          </Link>
-          <Link href="/#tapa-toimia">
-            <LinkContent onClick={() => setMobileMenuOpen(false)}>
-              Tapa toimia
-            </LinkContent>
-          </Link>
-          <Link href="/#ehdokkaat">
-            <LinkContent onClick={() => setMobileMenuOpen(false)}>
-              Ehdokkaat
-            </LinkContent>
-          </Link>
-          <Link href="/#vaaliOhjelma">
-            <LinkContent onClick={() => setMobileMenuOpen(false)}>
-              Vaaliohjelma
-            </LinkContent>
-          </Link>
-          <Link href="/#edustajat">
-            <LinkContent onClick={() => setMobileMenuOpen(false)}>
-              Edustajat
-            </LinkContent>
-          </Link>
-          <Link href="/#ota-yhteytta">
-            <LinkContent onClick={() => setMobileMenuOpen(false)}>
-              Ota yhteyttä
-            </LinkContent>
-          </Link>
-        </Links>
+        {language.language == "en" ? (
+          <Links open={mobileMenuOpen}>
+            <Link href="/en/#tapa-toimia">
+              <LinkContent onClick={() => setMobileMenuOpen(false)}>
+                Way of Working
+              </LinkContent>
+            </Link>
+            <Link href="/en/#ehdokkaat">
+              <LinkContent onClick={() => setMobileMenuOpen(false)}>
+                Candidates
+              </LinkContent>
+            </Link>
+            <Link href="/en/#vaaliOhjelma">
+              <LinkContent onClick={() => setMobileMenuOpen(false)}>
+                Election platform
+              </LinkContent>
+            </Link>
+            <Link href="/en/#edustajat">
+              <LinkContent onClick={() => setMobileMenuOpen(false)}>
+                Representatives
+              </LinkContent>
+            </Link>
+            <Link href="/en/#ota-yhteytta">
+              <LinkContent onClick={() => setMobileMenuOpen(false)}>
+                Contact
+              </LinkContent>
+            </Link>
+            <Link href="/">
+              <LanguageLink onClick={() => setMobileMenuOpen(false)}>
+                Suomeksi
+              </LanguageLink>
+            </Link>
+          </Links>
+        ) : (
+          <Links open={mobileMenuOpen}>
+            <Link href="/#tapa-toimia">
+              <LinkContent onClick={() => setMobileMenuOpen(false)}>
+                Tapa toimia
+              </LinkContent>
+            </Link>
+            <Link href="/#ehdokkaat">
+              <LinkContent onClick={() => setMobileMenuOpen(false)}>
+                Ehdokkaat
+              </LinkContent>
+            </Link>
+            <Link href="/#vaaliOhjelma">
+              <LinkContent onClick={() => setMobileMenuOpen(false)}>
+                Vaaliohjelma
+              </LinkContent>
+            </Link>
+            <Link href="/#edustajat">
+              <LinkContent onClick={() => setMobileMenuOpen(false)}>
+                Edustajat
+              </LinkContent>
+            </Link>
+            <Link href="/#ota-yhteytta">
+              <LinkContent onClick={() => setMobileMenuOpen(false)}>
+                Ota yhteyttä
+              </LinkContent>
+            </Link>
+            <Link href="/en">
+              <LanguageLink onClick={() => setMobileMenuOpen(false)}>
+                In English
+              </LanguageLink>
+            </Link>
+          </Links>
+        )}
       </MobileWrapper>
     </Container>
   );

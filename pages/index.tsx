@@ -163,7 +163,7 @@ const Home: NextPage<LocalData> = ({ localData }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <GlobalStyle />
-      <Header />
+      <Header language={"fi"} />
       <main>
         <Content>
           <ContentBlock id="etusivu" color="blue">
@@ -272,9 +272,9 @@ const Home: NextPage<LocalData> = ({ localData }) => {
               <h4>Järkevällä liiketoiminnalla</h4>
               <p>
                 Ylioppilaskunta mielletään erityisesti
-                edunvalvontaorganisaationa. Siitä huolimatta vain murto-osa
-                jokaisen opiskelijan vuosittaisista jäsenmaksuista on mennyt
-                itse varsinaiseen edunvalvontaan. Viimeisimmän edustajistokauden
+                edunvalvontaorganisaationa. Siitä huolimatta vain osa jokaisen
+                opiskelijan vuosittaisista jäsenmaksuista on mennyt itse
+                varsinaiseen edunvalvontaan. Viimeisimmän edustajistokauden
                 aikana myös PD oli mukana karsimassa kannattamatonta
                 liiketoimintaa.{" "}
               </p>
