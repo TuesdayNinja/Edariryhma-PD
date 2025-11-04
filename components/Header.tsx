@@ -58,7 +58,7 @@ const Links = styled.div<MobileProps>`
     background-color: #e3e5f1;
     width: 100%;
     margin-top: 4em;
-    height: 22em;
+    height: 26em;
     flex-direction: column;
   }
 `;
